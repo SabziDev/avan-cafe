@@ -1,0 +1,91 @@
+import menuItems from "@public/data/menu/menu.js";
+import { Link } from "react-router";
+
+import Icon from "@/components/Icon/Icon";
+
+import DesktopMenuItem from "./DesktopMenuItem";
+import MobileMenuItem from "./MobileMenuItem";
+
+const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
+  return (
+    <>
+      <ul className="hidden w-full gap-5 lg:flex-center xl:gap-10">
+        {menuItems.map((menuItem) => (
+          <DesktopMenuItem key={menuItem.id} menuItem={menuItem} />
+        ))}
+      </ul>
+      {isOpenMobileMenu && (
+        <>
+          <div
+            onClick={toggleOpenMobileMenu}
+            className="fixed inset-0 z-199 h-screen bg-black/50 lg:hidden"
+          />
+          <div className="fixed inset-y-0 right-0 z-200 flex h-screen w-[80%] scrollbar-thin scrollbar-thumb-primary flex-col justify-between overflow-y-auto bg-white px-6 pt-4 pb-30 lg:hidden">
+            <div className="flex-center flex-col gap-10">
+              <Link to="/" className="w-full rounded-xl bg-primary px-6 py-3">
+                <div className="h-10 w-32.5">
+                  <img
+                    src="/images/app-logo.png"
+                    alt="avan-coffee"
+                    className="size-full"
+                  />
+                </div>
+              </Link>
+              <ul className="flex-justify-center w-full flex-col items-start gap-6">
+                {menuItems.map((menuItem) => (
+                  <MobileMenuItem key={menuItem.id} menuItem={menuItem} />
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <div className="mb-6 flex-center gap-4">
+                <button
+                  type="button"
+                  className="flex-center w-28 cursor-pointer gap-1 rounded-full bg-cream px-1.5 py-1 pl-2 transition-colors hover:bg-caramel"
+                >
+                  <span className="w-[80%] rounded-full bg-white text-caramel">
+                    ورود
+                  </span>
+                  <Icon
+                    src="/images/icons/icons.svg#arrow-left-long"
+                    className="size-4.5 text-primary/60"
+                  />
+                </button>
+                <button
+                  type="button"
+                  className="flex-center w-28 cursor-pointer gap-1 rounded-full bg-secoundary px-1.5 py-1 pl-2"
+                >
+                  <span className="w-[80%] rounded-full bg-white text-secoundary">
+                    ثبت‌نام
+                  </span>
+                  <Icon
+                    src="/images/icons/icons.svg#login"
+                    className="size-4.5 text-primary/60"
+                  />
+                </button>
+              </div>
+              <a href="tel:09911943412" className="flex-center gap-1">
+                <div className="flex-center flex-col">
+                  <div dir="ltr">
+                    <span className="text-secoundary">+98</span>
+                    <span> 991 194 3412</span>
+                  </div>
+                  <span className="text-xs">
+                    همین حالا با پشتیبانی ما تماس بگیر
+                  </span>
+                </div>
+                <Icon
+                  src="images/icons/icons.svg#phone"
+                  className="size-10 text-secoundary"
+                />
+              </a>
+            </div>
+          </div>
+        </>
+      )}
+    </>
+  );
+};
+
+export default Menu;
