@@ -1,0 +1,74 @@
+<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+<!-- ⚒️ Developed by: Abolfazl Sabzmohammadi -->
+<!--  -->
+<!--  -->
+<!-- 🌐 Website (resume): https://SabziDev.com -->
+<!--  -->
+<!-- 🚀 Telegram: https://t.me/SabziDev -->
+<!--  -->
+<!-- 📸 Instagram: https://instagram.com/SabziDev -->
+<!--  -->
+<!-- 😺 GitHub: https://github.com/SabziDev -->
+<!--  -->
+<!-- 📧 Email: SabziDev@gmail.com -->
+<!--  -->
+<!--  -->
+<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+<!doctype html>
+
+<html lang="fa" dir="rtl" class="scrollbar-thumb-secoundary">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      #app-preloader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        inset: 0;
+        background-color: #fff;
+        z-index: 9999;
+      }
+      .app-preloader__pulse {
+        width: 100px;
+        height: 100px;
+        margin: 100px auto;
+        border-radius: 100%;
+        background-color: #02314b;
+        opacity: 0.8;
+        animation: app-preloader-pulse 1.8s infinite ease-in-out;
+      }
+
+      @keyframes app-preloader-pulse {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+    </style>
+
+    <meta name="theme-color" content="#02314b" />
+
+    <link rel="icon" type="image/png" href="./app-faviocn.png" />
+
+    <link rel="stylesheet" href="./src/input.css" />
+  </head>
+
+  <!-- TODO Add overflow-x-hidden after finall responsive -->
+  <body class="font-Vazir bg-[#FDFDFD] text-primary">
+    <div id="app-preloader">
+      <div class="app-preloader__pulse"></div>
+    </div>
+
+    <!--? ============================================= -- React App -- =============================================  -->
+    <div id="root"></div>
+    <!--? ============================================= -- React App -- =============================================  -->
+    <script src="/src/main.jsx" type="module"></script>
+  </body>
+</html>

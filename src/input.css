@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* ============================================= -- Theme Configuration -- ============================================= */
+@theme {
+  --color-primary: #02314b;
+  --color-secoundary: #6599b8;
+  --color-cream: #ebe5e3;
+  --color-caramel: #bc8767;
+
+  --font-Vazir: "Vazir", Arial, Helvetica, sans-serif;
+}
+/* ============================================= -- Theme Configuration -- ============================================= */
+
+/*! ============================================= -- Base Customization -- ============================================= */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  input {
+    outline: none;
+  }
+  input[type="search"]::-webkit-search-cancel-button {
+    @apply hidden;
+  }
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    -webkit-text-fill-color: #02314b;
+    -webkit-box-shadow: 0 0 0 1000px #ebe5e3 inset;
+  }
+
+  @font-face {
+    font-family: "Vazir";
+
+    src:
+      local("Vazir-Medium-FD-WOL"),
+      url("/fonts/Vazir/Medium.woff2") format("woff2");
+
+    font-display: swap;
+  }
+}
+@utility container {
+  @apply mx-auto px-5 xl:px-26;
+}
+/*! ============================================= -- Base Customization -- ============================================= */
+
+/*? ============================================= -- Custom Utilities -- ============================================= */
+/* @utility NAME {
+} */
+/*? ============================================= -- Custom Utilities -- ============================================= */
+
+/** ============================================= -- Custom Components -- ============================================= */
+@utility flex-items-center {
+  @apply flex items-center;
+}
+@utility flex-justify-center {
+  @apply flex justify-center;
+}
+@utility flex-center {
+  @apply flex-items-center justify-center;
+}
+@utility flex-start {
+  @apply flex items-start justify-start;
+}
+/** ============================================= -- Custom Components -- ============================================= */
+
+/* ============================================= -- Packages Customization -- ============================================= */
+@layer base {
+  /* PACKAGENAME */
+  /* codes... */
+}
+/* ============================================= -- Packages Customization -- ============================================= */
