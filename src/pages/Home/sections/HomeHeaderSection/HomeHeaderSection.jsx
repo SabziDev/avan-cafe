@@ -6,7 +6,7 @@ import HomeHeaderParallax from "./components/HomeHeaderParallax";
 
 const HomeHeaderSection = () => (
   <section
-    className="relative mt-4 flex overflow-hidden rounded-[40px] bg-secoundary px-4 pb-10 sm:px-0 sm:pb-14 xl:overflow-visible"
+    className="relative flex overflow-hidden rounded-[40px] bg-secoundary px-4 pb-10 sm:px-0 sm:pb-14 xl:overflow-visible"
     style={{
       backgroundImage:
         "radial-gradient(circle at center, #02314b80 1px, transparent 2px)",

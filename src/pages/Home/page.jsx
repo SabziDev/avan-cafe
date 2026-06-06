@@ -4,6 +4,7 @@ import Head from "../components/Head";
 import DrinkProductsSection from "./sections/DrinkProductsSection/DrinkProductsSection";
 import HomeHeaderSection from "./sections/HomeHeaderSection/HomeHeaderSection";
 import ProductsTypesSection from "./sections/ProductsTypesSection/ProductsTypesSection";
+import WhyAvanSectiom from "./sections/WhyAvanSection/WhyAvanSection";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <HomeHeaderSection />
       <ProductsTypesSection />
       <DrinkProductsSection />
+      <WhyAvanSectiom />
     </>
   );
 };

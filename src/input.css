@@ -63,6 +63,13 @@
 @utility flex-start {
   @apply flex items-start justify-start;
 }
+
+@utility rtl {
+  direction: rtl;
+}
+@utility ltr {
+  direction: ltr;
+}
 /** ============================================= -- Custom Components -- ============================================= */
 
 /* ============================================= -- Packages Customization -- ============================================= */

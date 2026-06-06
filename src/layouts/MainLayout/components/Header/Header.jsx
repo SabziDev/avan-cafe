@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import Icon from "@/components/Icon/Icon";
 import useToggle from "@/hooks/useToggle";
 
-import Divider from "../components/Divider/Divider";
+import Divider from "../../../../components/Divider/Divider";
 import Basket from "./components/Basket/Basket";
 import Login from "./components/Login/Login";
 import Menu from "./components/Menu/Menu";

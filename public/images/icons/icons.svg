@@ -144,4 +144,33 @@
         <path d="M6 2.69333L6.69333 3.38666" stroke="currentColor" stroke-width="1.5px" stroke-miterlimit="10"
             stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
     </symbol>
+
+    <symbol id="map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+        <path
+            d="M15.1199 10.3101C15.1199 12.0301 13.7299 13.4301 11.9999 13.4301C10.2699 13.4301 8.87988 12.0401 8.87988 10.3101C8.87988 8.58006 10.2799 7.19006 11.9999 7.19006C12.3399 7.19006 12.6699 7.24006 12.9699 7.34006"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path
+            d="M5.97996 4.30006C10.35 0.190061 18.82 1.60006 20.38 8.51006C21.53 13.5901 18.37 17.8901 15.6 20.5501C13.59 22.4901 10.41 22.4901 8.38996 20.5501C5.62996 17.8801 2.45996 13.5801 3.61996 8.50006"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
+
+    <symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none">
+        <path d="M9.57 5.93018L3.5 12.0002L9.57 18.0702" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+            stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M12.82 12H3.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        <path d="M20.3296 12H16.8496" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+            stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
+
+    <symbol id="insta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+        <path
+            d="M2.16699 14.1159V16.2501C2.16699 21.6667 4.33366 23.8334 9.75033 23.8334H16.2503C21.667 23.8334 23.8337 21.6667 23.8337 16.2501V9.75008C23.8337 4.33341 21.667 2.16675 16.2503 2.16675H9.75033C4.33366 2.16675 2.16699 4.33341 2.16699 9.75008"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path
+            d="M12.9997 16.7918C15.0938 16.7918 16.7913 15.0942 16.7913 13.0002C16.7913 10.9061 15.0938 9.2085 12.9997 9.2085C10.9056 9.2085 9.20801 10.9061 9.20801 13.0002C9.20801 15.0942 10.9056 16.7918 12.9997 16.7918Z"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M19.1061 7.58341H19.1186" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+    </symbol>
 </svg>

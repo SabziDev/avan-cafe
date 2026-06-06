@@ -4,7 +4,7 @@ import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import Slider from "../../components/Slider/Slider";
 
 const PopularProductsSection = () => (
-  <section className="mb-70">
+  <section>
     <SectionTitle isShowLink>نوشیدنی ها</SectionTitle>
     <Slider products={products.drinks} sliderLabel="محبوب" isShowDiscount />
   </section>
