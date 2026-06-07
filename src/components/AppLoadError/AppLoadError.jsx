@@ -1,13 +1,10 @@
 import { useEffect } from "react";
+import { createPortal } from "react-dom";
 
 const AppLoadError = () => {
-  useEffect(() => {
-    document.body.classList.add("overflow-hidden", "overflow-hidden");
+  useEffect(() => document.body.classList.add("overflow-hidden"));
 
-    return () => document.body.classList.remove("overflow-hidden");
-  });
-
-  return (
+  return createPortal(
     <div
       className="fixed inset-0 z-9999 flex-center h-screen flex-col overflow-hidden px-4 text-center select-none"
       style={{
@@ -52,7 +49,8 @@ const AppLoadError = () => {
       >
         تلاش مجدد
       </button>
-    </div>
+    </div>,
+    document.body,
   );
 };
 
