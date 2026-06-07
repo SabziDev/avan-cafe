@@ -70,7 +70,6 @@ const mergeDuplicateIdAndClassNameProps = {
                 },
 
                 fix(fixer) {
-                  // ✅ حالا هردو (id و className) یکسان ترکیب میشن
                   const mergedValue = [...new Set(values)].join(" ").trim();
 
                   const fixes = [
