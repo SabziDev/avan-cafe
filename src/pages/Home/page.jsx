@@ -13,6 +13,7 @@ const Home = () => {
         <title>{pagesMeta.home.title}</title>
         <meta name="description" content={pagesMeta.home.desc} />
       </Head>
+
       <HomeHeaderSection />
       <ProductsTypesSection />
       <DrinkProductsSection />
