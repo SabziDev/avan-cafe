@@ -3,9 +3,9 @@ import clsx from "clsx";
 import Img from "@/components/Img/Img";
 
 const DesktopSubMenuItem = ({
-  onClickSubMenu,
   subMenuSelectedId,
   subMenuItem,
+  onClickSubMenu,
 }) => (
   <li
     onClick={() => onClickSubMenu(subMenuItem.id)}

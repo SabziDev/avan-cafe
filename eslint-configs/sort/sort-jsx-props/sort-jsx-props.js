@@ -1,5 +1,10 @@
 /* eslint-disable unicorn/consistent-function-scoping */
 
+import {
+  eventHandlerOrder,
+  staticPropertiesOrder,
+} from "../properties-order.js";
+
 const sortJsxProps = {
   rules: {
     "sort-jsx-props": {
@@ -12,32 +17,8 @@ const sortJsxProps = {
       },
 
       create(context) {
-        const firstGroupOrder = [
-          "key",
-          "ref",
-          "id",
-          // ----
-          "type",
-          "name",
-          "value",
-          "placeholder",
-          // ----
-          "src",
-          "alt",
-          "loading",
-          "poster",
-          "controls",
-          // ----
-          "href",
-          "target",
-          "rel",
-          "to",
-          "replace",
-        ];
-        const eventHandlerOrder = ["onClick", "onChange", "onKeyUp"];
-
         const { sourceCode } = context;
-        const firstGroupSet = new Set(firstGroupOrder);
+        const firstGroupSet = new Set(staticPropertiesOrder);
 
         const isEventHandler = (attrName) => /^on[A-Z]/.test(attrName);
 
@@ -61,13 +42,13 @@ const sortJsxProps = {
 
             if (normalAttrs.length === 0 && spreads.length === 0) return;
 
-            const firstGroup = firstGroupOrder.flatMap((name) =>
+            const firstGroup = staticPropertiesOrder.flatMap((name) =>
               normalAttrs.filter((attr) => attr.name.name === name),
             );
 
             const eventHandlers = normalAttrs
               .filter((attr) => isEventHandler(attr.name.name))
-              .toSorted((a, b) => {
+              .sort((a, b) => {
                 const priorityA = getEventPriority(a.name.name);
                 const priorityB = getEventPriority(b.name.name);
 
@@ -80,7 +61,7 @@ const sortJsxProps = {
 
             const classStyle = normalAttrs
               .filter((attr) => ["className", "style"].includes(attr.name.name))
-              .toSorted((a, b) => {
+              .sort((a, b) => {
                 if (a.name.name === "className" && b.name.name === "style")
                   return -1;
                 if (a.name.name === "style" && b.name.name === "className")
