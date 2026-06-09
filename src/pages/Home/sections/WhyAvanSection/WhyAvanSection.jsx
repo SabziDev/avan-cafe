@@ -4,9 +4,9 @@ import Icon from "@/components/Icon/Icon";
 
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
-const WhyAvanSectiom = () => {
+const WhyAvanSection = () => {
   return (
-    <section className="relative mb-100">
+    <section className="relative">
       <SectionTitle>چرا کافه آوان؟</SectionTitle>
       <div className="flex-items-center flex-col justify-between xl:flex-justify-center xl:items-start">
         <div className="flex-justify-center max-w-250 flex-col items-start gap-4 xl:flex-row">
@@ -35,7 +35,7 @@ const WhyAvanSectiom = () => {
             </div>
             <div className="flex-center gap-6">
               <Btn svgSrc="/images/icons/icons.svg#map">گوگل مپ</Btn>
-              <Btn svgSrc="/images/icons/icons.svg#arrow-left" isBtnActive>
+              <Btn svgSrc="/images/icons/icons.svg#arrow-medium" isBtnActive>
                 اطلاعات بیشتر
               </Btn>
             </div>
@@ -43,6 +43,7 @@ const WhyAvanSectiom = () => {
           <div className="mt-8 flex-center flex-col">
             <video
               src="/videos/pages/home/why-avan-section/sample-video.mp4"
+              poster="/videos/pages/home/why-avan-section/sample-video-cover.png"
               controls
               className="w-200 rounded-4xl border border-primary/20 xl:w-120"
             >
@@ -77,13 +78,13 @@ const WhyAvanSectiom = () => {
           </div>
         </div>
         <img
-          src="/images/shapes/home/why-avan-section/humberger.png"
+          src="/images/shapes/pages/home/why-avan-section/humberger.png"
           alt="humberger-section"
-          className="absolute -left-15 mt-2 sm:-left-20 md:-left-60 md:-mt-12 md:scale-70 lg:-left-42 lg:scale-90 xl:-left-110 xl:scale-90 2xl:-left-55 2xl:scale-100"
+          className="absolute -left-15 mt-2 sm:-left-20 md:-left-60 md:-mt-12 md:scale-70 lg:-left-42 lg:scale-90 xl:-left-110 xl:scale-90 2xl:-left-80 2xl:scale-100"
         />
       </div>
     </section>
   );
 };
 
-export default WhyAvanSectiom;
+export default WhyAvanSection;

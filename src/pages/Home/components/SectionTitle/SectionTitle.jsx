@@ -16,7 +16,7 @@ const SectionTitle = ({ children, isShowLink = false }) => {
         <Link to="#" className="flex-center gap-2">
           <span className="text-md sm:text-lg md:text-xl">مشاهده همه</span>
           <Icon
-            src="/images/icons/icons.svg#arrow-left-long"
+            src="/images/icons/icons.svg#arrow-long"
             className="size-6 rotate-45"
           />
         </Link>

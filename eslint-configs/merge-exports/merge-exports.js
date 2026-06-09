@@ -88,6 +88,7 @@ const mergeExports = {
                     fixer.remove(defaultExportNode),
                     fixer.insertTextAfter(lastNode, `\n${defaultCode}`),
                   ];
+
                   return fixes;
                 },
               });

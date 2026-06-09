@@ -14,14 +14,26 @@ const sortJsxProps = {
       create(context) {
         const firstGroupOrder = [
           "key",
-          "ref",
           "id",
+          "ref",
           "type",
+          // ----
+          "name",
+          "value",
+          "placeholder",
+          // ----
           "src",
           "alt",
+          "poster",
+          "controls",
+          // ----
           "href",
           "target",
           "rel",
+          // ----
+          "to",
+          "replace",
+          // ----
           "loading",
         ];
         const firstGroupSet = new Set(firstGroupOrder);
@@ -57,6 +69,7 @@ const sortJsxProps = {
 
             const otherProps = normalAttrs.filter((attr) => {
               const { name } = attr.name;
+
               return (
                 !firstGroupSet.has(name) &&
                 !isEventHandler(name) &&

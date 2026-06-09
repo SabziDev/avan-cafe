@@ -35,18 +35,21 @@ const HomeHeaderParallax = () => {
     };
 
     window.addEventListener("mousemove", handleMouseMove);
+
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [mouseX, mouseY]);
 
   const xPercent = useTransform(mouseX, (v) => {
     if (windowSize.width === 0) return 0;
     const centerX = windowSize.width / 2;
+
     return (v - centerX) / centerX;
   });
 
   const yPercent = useTransform(mouseY, (v) => {
     if (windowSize.height === 0) return 0;
     const centerY = windowSize.height / 2;
+
     return (v - centerY) / centerY;
   });
 

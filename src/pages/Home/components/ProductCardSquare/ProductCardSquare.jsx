@@ -1,9 +1,7 @@
-import clsx from "clsx";
-
 import Icon from "@/components/Icon/Icon";
 import Img from "@/components/Img/Img";
 
-const SliderItem = ({
+const ProductCardSquare = ({
   product,
   sliderLabel,
   isShowDiscount,
@@ -11,10 +9,12 @@ const SliderItem = ({
 }) => {
   return (
     <article
-      className={clsx([
-        "relative cursor-default overflow-hidden rounded-3xl bg-white p-2 pt-0 drop-shadow-xl select-none before:absolute before:right-0 before:bg-secoundary before:px-5 before:py-1 before:text-sm before:text-white before:transition-colors before:duration-300 after:absolute after:inset-x-0 after:top-15 after:z-10 after:mx-auto after:h-8 after:w-[90%] after:rounded-full after:bg-cream after:transition-colors after:duration-300 hover:before:bg-[#4a7d9c] hover:after:bg-caramel",
-        "before:content-(--label)",
-      ])}
+      className="
+        relative cursor-default overflow-hidden rounded-3xl bg-white p-2 pt-0 shadow-md select-none
+        before:absolute before:right-0 before:bg-secoundary before:px-5 before:py-1 before:text-sm before:text-white before:transition-colors before:duration-300
+        before:content-(--label) after:absolute after:inset-x-0 after:top-15 after:z-10 after:mx-auto after:h-8 after:w-[90%] after:rounded-full after:bg-cream after:transition-colors
+        after:duration-300 hover:before:bg-[#4a7d9c]
+        hover:after:bg-caramel"
       style={{
         "--label": `"${sliderLabel}"`,
       }}
@@ -71,4 +71,4 @@ const SliderItem = ({
   );
 };
 
-export default SliderItem;
+export default ProductCardSquare;

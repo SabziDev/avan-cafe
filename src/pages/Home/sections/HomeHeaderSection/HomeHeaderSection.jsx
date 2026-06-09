@@ -15,7 +15,7 @@ const HomeHeaderSection = () => (
   >
     <div className="absolute inset-x-0 mx-auto max-h-132.5 max-w-157.5 overflow-hidden bg-secoundary/50 px-4 2xl:-left-160">
       <img
-        src="/images/shapes/header-section/hero.png"
+        src="/images/shapes/pages/home/header-section/hero.png"
         alt="shape"
         className="size-full object-fill"
       />

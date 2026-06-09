@@ -35,7 +35,7 @@
             stroke-linejoin="round" />
     </symbol>
 
-    <symbol id="arrow-left-long" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+    <symbol id="arrow-long" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 16 16" fill="none" class="inline">
         <path d="M6.37967 3.95334L2.33301 8.00001L6.37967 12.0467" stroke="currentColor" stroke-miterlimit="10"
             stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" fill="currentColor" />
@@ -43,6 +43,24 @@
             stroke-linejoin="round" fill-opacity="0" fill="currentColor" />
         <path d="M13.5534 8H11.2334" stroke="currentColor" stroke-miterlimit="10" stroke-linecap="round"
             stroke-linejoin="round" fill-opacity="0" fill="currentColor" />
+    </symbol>
+
+    <symbol id="arrow-medium" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none">
+        <path d="M9.57 5.93018L3.5 12.0002L9.57 18.0702" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+            stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M12.82 12H3.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        <path d="M20.3296 12H16.8496" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+            stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
+
+    <symbol id="arrow-short" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.6 5.29333L10.3467 7.04C10.86 7.55334 10.86 8.39333 10.3467 8.90667L6 13.2467" stroke="currentColor"
+            stroke-width="1.5px" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        </path>
+        <path d="M6 2.69333L6.69333 3.38666" stroke="currentColor" stroke-width="1.5px" stroke-miterlimit="10"
+            stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
     </symbol>
 
     <symbol id="product-category" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,15 +154,6 @@
             fill="none"></path>
     </symbol>
 
-    <symbol id="arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path d="M8.6 5.29333L10.3467 7.04C10.86 7.55334 10.86 8.39333 10.3467 8.90667L6 13.2467" stroke="currentColor"
-            stroke-width="1.5px" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
-        </path>
-        <path d="M6 2.69333L6.69333 3.38666" stroke="currentColor" stroke-width="1.5px" stroke-miterlimit="10"
-            stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
-    </symbol>
-
     <symbol id="map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
         <path
             d="M15.1199 10.3101C15.1199 12.0301 13.7299 13.4301 11.9999 13.4301C10.2699 13.4301 8.87988 12.0401 8.87988 10.3101C8.87988 8.58006 10.2799 7.19006 11.9999 7.19006C12.3399 7.19006 12.6699 7.24006 12.9699 7.34006"
@@ -152,15 +161,6 @@
         <path
             d="M5.97996 4.30006C10.35 0.190061 18.82 1.60006 20.38 8.51006C21.53 13.5901 18.37 17.8901 15.6 20.5501C13.59 22.4901 10.41 22.4901 8.38996 20.5501C5.62996 17.8801 2.45996 13.5801 3.61996 8.50006"
             stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-    </symbol>
-
-    <symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none">
-        <path d="M9.57 5.93018L3.5 12.0002L9.57 18.0702" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-            stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M12.82 12H3.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-            stroke-linejoin="round"></path>
-        <path d="M20.3296 12H16.8496" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-            stroke-linecap="round" stroke-linejoin="round"></path>
     </symbol>
 
     <symbol id="insta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">

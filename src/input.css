@@ -16,9 +16,23 @@
   html {
     @apply scroll-smooth;
   }
+  ::selection {
+    @apply bg-caramel text-primary;
+  }
 
-  input {
-    outline: none;
+  input[type="number"]::-webkit-inner-spin-button {
+    @apply appearance-none;
+  }
+  input[type="number"] {
+    appearance: textfield;
+  }
+  input,
+  textarea {
+    @apply outline-0! transition-shadow;
+  }
+  input:focus,
+  textarea:focus {
+    @apply ring-2 ring-primary/20 ring-offset-0;
   }
   input[type="search"]::-webkit-search-cancel-button {
     @apply hidden;
@@ -26,8 +40,7 @@
   input:-webkit-autofill,
   textarea:-webkit-autofill,
   select:-webkit-autofill {
-    -webkit-text-fill-color: #02314b;
-    -webkit-box-shadow: 0 0 0 1000px #ebe5e3 inset;
+    @apply transition-all duration-9999999;
   }
 
   @font-face {
@@ -46,8 +59,12 @@
 /*! ============================================= -- Base Customization -- ============================================= */
 
 /*? ============================================= -- Custom Utilities -- ============================================= */
-/* @utility NAME {
-} */
+@utility ltr {
+  direction: ltr;
+}
+@utility rtl {
+  direction: rtl;
+}
 /*? ============================================= -- Custom Utilities -- ============================================= */
 
 /** ============================================= -- Custom Components -- ============================================= */
@@ -63,12 +80,8 @@
 @utility flex-start {
   @apply flex items-start justify-start;
 }
-
-@utility rtl {
-  direction: rtl;
-}
-@utility ltr {
-  direction: ltr;
+@utility flex-end {
+  @apply flex items-end justify-end;
 }
 /** ============================================= -- Custom Components -- ============================================= */
 

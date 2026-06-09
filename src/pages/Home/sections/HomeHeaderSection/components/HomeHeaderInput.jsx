@@ -7,7 +7,7 @@ const HomeHeaderInput = () => {
         type="search"
         name="search"
         placeholder="دنبال چی می‌گردی؟"
-        className="size-full text-xl placeholder:text-base"
+        className="size-full text-xl ring-0 placeholder:text-base"
       />
       <Icon
         src="/images/icons/icons.svg#search"

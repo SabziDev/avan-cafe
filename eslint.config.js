@@ -2,6 +2,7 @@ import { defineConfig } from "@fullstacksjs/eslint-config";
 import reactRefresh from "eslint-plugin-react-refresh";
 import unicorn from "eslint-plugin-unicorn";
 
+import addBlankLineBeforeReturn from "./eslint-configs/add-blank-line-before-return/add-blank-line-before-return.js";
 import mergeDuplicateIdAndClassNameProps from "./eslint-configs/merge-duplicate-id-and-classname-props/merge-duplicate-id-and-classname-props.js";
 import mergeExports from "./eslint-configs/merge-exports/merge-exports.js";
 import noInvalidIdAndClassNameValue from "./eslint-configs/no-invalid-id-and-classname-value/no-invalid-id-and-classname-value.js";
@@ -11,6 +12,9 @@ import sortJsxProps from "./eslint-configs/sort-jsx-props/sort-jsx-props.js";
 
 const customPlugin = {
   rules: {
+    "add-blank-line-before-return":
+      addBlankLineBeforeReturn.rules["add-blank-line-before-return"],
+
     "merge-duplicate-id-and-classname-props":
       mergeDuplicateIdAndClassNameProps.rules[
         "merge-duplicate-id-and-classname-props"
@@ -51,12 +55,13 @@ const config = defineConfig(
       "jsx-a11y/click-events-have-key-events": "off",
       "jsx-a11y/no-noninteractive-element-interactions": "off",
 
+      "custom/add-blank-line-before-return": "warn",
       "custom/merge-duplicate-id-and-classname-props": "warn",
       "custom/merge-exports": "warn",
       "custom/no-invalid-id-and-classname-value": "error",
-      "custom/no-useless-template-literal": "error",
-      "custom/sort-comments": "error",
-      "custom/sort-jsx-props": "error",
+      "custom/no-useless-template-literal": "warn",
+      "custom/sort-comments": "warn",
+      "custom/sort-jsx-props": "warn",
     },
   },
 

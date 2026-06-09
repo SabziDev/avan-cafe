@@ -2,7 +2,12 @@ import clsx from "clsx";
 
 import Icon from "../Icon/Icon";
 
-const Btn = ({ children, svgSrc = "", isBtnActive = false }) => {
+const Btn = ({
+  children,
+  svgSrc = "",
+  isBtnActive = false,
+  className = "",
+}) => {
   return (
     <button
       type="button"
@@ -11,6 +16,7 @@ const Btn = ({ children, svgSrc = "", isBtnActive = false }) => {
         isBtnActive
           ? "bg-caramel hover:bg-[#A17052]"
           : "bg-cream/80 hover:bg-caramel",
+        className,
       ])}
     >
       <span className="flex-center size-full rounded-full bg-white p-0.5 text-sm font-bold text-caramel transition-colors duration-300">

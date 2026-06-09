@@ -5,16 +5,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import Icon from "@/components/Icon/Icon";
 
-import SliderItem from "./SliderItem";
+import ProductCardRectangle from "../ProductCardRectangle/ProductCardRectangle";
+import ProductCardSquare from "../ProductCardSquare/ProductCardSquare";
 
 const Slider = ({
+  products,
+  sliderTitle = "",
+  sliderLabel = "",
+  cardShape = "square",
   isLoopSlider = false,
   isAutoPlay = false,
   isShowSliderNavigationBtns = false,
   isShowOnlyBasket = false,
-  products,
-  sliderTitle = "",
-  sliderLabel = "",
   isShowDiscount = false,
 }) => {
   const id = useId();
@@ -32,7 +34,7 @@ const Slider = ({
               className="cursor-pointer rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-caramel hover:text-white"
             >
               <Icon
-                src="images/icons/icons.svg#arrow-right"
+                src="images/icons/icons.svg#arrow-short"
                 className="size-4"
               />
             </button>
@@ -42,7 +44,7 @@ const Slider = ({
               className="cursor-pointer rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-caramel hover:text-white"
             >
               <Icon
-                src="images/icons/icons.svg#arrow-right"
+                src="images/icons/icons.svg#arrow-short"
                 className="size-4 rotate-180"
               />
             </button>
@@ -71,16 +73,30 @@ const Slider = ({
         }}
         modules={[Pagination, Autoplay, Navigation]}
       >
-        {products.map((product) => (
-          <SwiperSlide key={product.id} className="w-64.5! p-2 pb-6 sm:w-64.5!">
-            <SliderItem
-              product={product}
-              sliderLabel={sliderLabel}
-              isShowDiscount={isShowDiscount}
-              isShowOnlyBasket={isShowOnlyBasket}
-            />
-          </SwiperSlide>
-        ))}
+        {cardShape === "square"
+          ? products.map((product) => (
+              <SwiperSlide key={product.id} className="w-64.5! p-2 sm:w-64.5!">
+                <ProductCardSquare
+                  product={product}
+                  sliderLabel={sliderLabel}
+                  isShowDiscount={isShowDiscount}
+                  isShowOnlyBasket={isShowOnlyBasket}
+                />
+              </SwiperSlide>
+            ))
+          : products.map((product) => (
+              <SwiperSlide
+                key={product.id}
+                className="w-93! p-2 sm:ml-4 sm:w-100!"
+              >
+                <ProductCardRectangle
+                  product={product}
+                  sliderLabel={sliderLabel}
+                  isShowDiscount={isShowDiscount}
+                  isShowOnlyBasket={isShowOnlyBasket}
+                />
+              </SwiperSlide>
+            ))}
       </Swiper>
     </>
   );

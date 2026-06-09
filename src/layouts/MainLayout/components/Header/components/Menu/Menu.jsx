@@ -48,7 +48,7 @@ const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
                     ورود
                   </span>
                   <Icon
-                    src="/images/icons/icons.svg#arrow-left-long"
+                    src="/images/icons/icons.svg#arrow-long"
                     className="size-4.5 text-primary/60"
                   />
                 </button>
