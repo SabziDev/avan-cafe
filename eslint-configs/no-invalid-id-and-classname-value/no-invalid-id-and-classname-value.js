@@ -45,10 +45,7 @@ const noInvalidIdAndClassNameValue = {
             context.report({
               node,
               messageId: "invalid",
-              data: {
-                attribute,
-                value: invalidValue,
-              },
+              data: { value: invalidValue, attribute },
               fix: (fixer) => fixer.remove(node),
             });
           },

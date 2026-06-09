@@ -14,32 +14,38 @@ const sortJsxProps = {
       create(context) {
         const firstGroupOrder = [
           "key",
-          "id",
           "ref",
-          "type",
+          "id",
           // ----
+          "type",
           "name",
           "value",
           "placeholder",
           // ----
           "src",
           "alt",
+          "loading",
           "poster",
           "controls",
           // ----
           "href",
           "target",
           "rel",
-          // ----
           "to",
           "replace",
-          // ----
-          "loading",
         ];
-        const firstGroupSet = new Set(firstGroupOrder);
+        const eventHandlerOrder = ["onClick", "onChange", "onKeyUp"];
+
         const { sourceCode } = context;
+        const firstGroupSet = new Set(firstGroupOrder);
 
         const isEventHandler = (attrName) => /^on[A-Z]/.test(attrName);
+
+        const getEventPriority = (handlerName) => {
+          const index = eventHandlerOrder.indexOf(handlerName);
+
+          return index === -1 ? 999 : index;
+        };
 
         return {
           JSXOpeningElement(node) {
@@ -59,13 +65,29 @@ const sortJsxProps = {
               normalAttrs.filter((attr) => attr.name.name === name),
             );
 
-            const eventHandlers = normalAttrs.filter((attr) =>
-              isEventHandler(attr.name.name),
-            );
+            const eventHandlers = normalAttrs
+              .filter((attr) => isEventHandler(attr.name.name))
+              .toSorted((a, b) => {
+                const priorityA = getEventPriority(a.name.name);
+                const priorityB = getEventPriority(b.name.name);
 
-            const classStyle = normalAttrs.filter((attr) =>
-              ["className", "style"].includes(attr.name.name),
-            );
+                if (priorityA === 999 && priorityB === 999) {
+                  return 0;
+                }
+
+                return priorityA - priorityB;
+              });
+
+            const classStyle = normalAttrs
+              .filter((attr) => ["className", "style"].includes(attr.name.name))
+              .toSorted((a, b) => {
+                if (a.name.name === "className" && b.name.name === "style")
+                  return -1;
+                if (a.name.name === "style" && b.name.name === "className")
+                  return 1;
+
+                return 0;
+              });
 
             const otherProps = normalAttrs.filter((attr) => {
               const { name } = attr.name;

@@ -9,6 +9,7 @@ import noInvalidIdAndClassNameValue from "./eslint-configs/no-invalid-id-and-cla
 import noUselessTemplateLiteral from "./eslint-configs/no-useless-template-literal/no-useless-template-literal.js";
 import sortComments from "./eslint-configs/sort-comments/sort-comments.js";
 import sortJsxProps from "./eslint-configs/sort-jsx-props/sort-jsx-props.js";
+import sortObjectProps from "./eslint-configs/sort-object-props/sort-object-props.js";
 
 const customPlugin = {
   rules: {
@@ -31,6 +32,8 @@ const customPlugin = {
     "sort-comments": sortComments.rules["sort-comments"],
 
     "sort-jsx-props": sortJsxProps.rules["sort-jsx-props"],
+
+    "sort-object-props": sortObjectProps.rules["sort-object-props"],
   },
 };
 
@@ -62,6 +65,7 @@ const config = defineConfig(
       "custom/no-useless-template-literal": "warn",
       "custom/sort-comments": "warn",
       "custom/sort-jsx-props": "warn",
+      "custom/sort-object-props": "warn",
     },
   },
 

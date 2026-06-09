@@ -16,15 +16,15 @@ const BaristaSuggestionSection = () => {
             <ProductCardRectangle
               product={{
                 title: "قهوه ترک - بزرگ",
-                imgSrc: "/images/pictures/products/coffee-cup.png",
                 price: 190_000,
+                imgSrc: "/images/pictures/products/coffee-cup.png",
               }}
             />
             <ProductCardRectangle
               product={{
                 title: "کیک لیمو - بزرگ",
-                imgSrc: "/images/pictures/products/cake-red.png",
                 price: 190_000,
+                imgSrc: "/images/pictures/products/cake-red.png",
               }}
             />
           </div>
