@@ -5,7 +5,10 @@ import logDeveloperSignature from "./components/DeveloperSignature/logDeveloperS
 import router from "./routes";
 
 const removeAppPreloader = () => {
-  setTimeout(() => document.querySelector("#app-preloader")?.remove(), 300);
+  setTimeout(() => {
+    document.querySelector("#app-preloader").remove();
+    document.body.classList.remove("overflow-hidden");
+  }, 300);
 };
 
 const App = () => {
