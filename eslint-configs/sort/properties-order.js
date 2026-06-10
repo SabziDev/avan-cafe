@@ -1,4 +1,5 @@
 const staticPropertiesOrder = [
+  "children",
   "key",
   "ref",
   "id",

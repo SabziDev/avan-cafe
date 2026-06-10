@@ -23,7 +23,7 @@ const Slider = ({
 
   return (
     <>
-      <div className="mt-10 flex-items-center justify-between">
+      <div className="mt-6 flex-items-center justify-between">
         <h3 className="text-[22px] font-bold">{sliderTitle}</h3>
 
         {isShowSliderNavigationBtns && (
@@ -34,7 +34,7 @@ const Slider = ({
               className="cursor-pointer rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-caramel hover:text-white"
             >
               <Icon
-                src="images/icons/icons.svg#arrow-short"
+                src="/images/icons/icons.svg#arrow-short"
                 className="size-4"
               />
             </button>
@@ -44,7 +44,7 @@ const Slider = ({
               className="cursor-pointer rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-caramel hover:text-white"
             >
               <Icon
-                src="images/icons/icons.svg#arrow-short"
+                src="/images/icons/icons.svg#arrow-short"
                 className="size-4 rotate-180"
               />
             </button>

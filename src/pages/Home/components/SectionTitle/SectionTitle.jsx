@@ -10,11 +10,13 @@ const SectionTitle = ({ children, isShowLink = false }) => {
           <span className="size-3 rotate-45 bg-primary" />
           <span className="size-4 bg-secoundary" />
         </div>
-        <span className="text-xl sm:text-2xl md:text-3xl">{children}</span>
+        <span className="text-xl sm:text-2xl md:text-4xl">{children}</span>
       </h3>
       {isShowLink && (
-        <Link to="#" className="flex-center gap-2">
-          <span className="text-md sm:text-lg md:text-xl">مشاهده همه</span>
+        <Link to="#" className="group flex-center gap-2">
+          <span className="text-md transition-all group-hover:underline group-hover:underline-offset-2 sm:text-lg md:text-xl">
+            مشاهده همه
+          </span>
           <Icon
             src="/images/icons/icons.svg#arrow-long"
             className="size-6 rotate-45"
