@@ -8,7 +8,7 @@ const removeAppPreloader = () => {
   setTimeout(() => {
     document.querySelector("#app-preloader").remove();
     document.body.classList.remove("overflow-hidden");
-  }, 3000);
+  }, 300);
 };
 
 const App = () => {
