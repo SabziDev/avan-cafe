@@ -10,8 +10,8 @@ const MobileSubMenuItem = ({ subMenuItem, isOpen, onToggle }) => {
       <li
         onClick={onToggle}
         className={clsx([
-          "flex-items-center w-full cursor-pointer justify-between transition-colors hover:text-secoundary",
-          isOpen ? "text-secoundary" : "text-primary",
+          "flex-items-center w-full cursor-pointer justify-between transition-colors hover:text-secondary",
+          isOpen ? "text-secondary" : "text-primary",
         ])}
       >
         <span className="text-sm">{subMenuItem.title}</span>
@@ -19,7 +19,7 @@ const MobileSubMenuItem = ({ subMenuItem, isOpen, onToggle }) => {
           src="/images/icons/icons.svg#dropdown-arrow"
           className={clsx([
             "size-3 rounded-full text-white transition-transform",
-            isOpen ? "rotate-0 bg-secoundary" : "rotate-90 bg-primary",
+            isOpen ? "rotate-0 bg-secondary" : "rotate-90 bg-primary",
           ])}
         />
       </li>

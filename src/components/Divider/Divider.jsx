@@ -1,5 +1,5 @@
 const Divider = () => {
-  return <span className="block h-10 w-px bg-secoundary/50" />;
+  return <span className="block h-10 w-px bg-secondary/50" />;
 };
 
 export default Divider;

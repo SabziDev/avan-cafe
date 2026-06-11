@@ -1,6 +1,5 @@
 const NumInput = ({
   name = "",
-  value = "",
   placeholder = "",
   className = "",
   ...restProps
@@ -9,7 +8,6 @@ const NumInput = ({
     <input
       type="number"
       name={name}
-      value={value}
       placeholder={placeholder}
       onWheel={(e) => e.target.blur()}
       className={className}

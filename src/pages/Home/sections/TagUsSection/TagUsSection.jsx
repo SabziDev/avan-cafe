@@ -14,11 +14,16 @@ const TagUsSection = () => {
             ما رو تــگ کــــن تا تو هم اینجــــا باشــــی!
           </SectionTitle>
         </div>
-        <div className="hidden lg:block">
+        <a
+          href="https://instagram.com/SabziDev"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="hidden lg:inline-block"
+        >
           <Btn svgSrc="/images/icons/icons.svg#insta" className="mt-2 mr-10">
             صفحه اینستاگرام
           </Btn>
-        </div>
+        </a>
       </div>
 
       <div

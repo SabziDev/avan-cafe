@@ -5,7 +5,7 @@ import BlogCard from "./components/BlogCard";
 
 const BlogSection = () => {
   return (
-    <section className="mb-20">
+    <section>
       <SectionTitle isShowLink>وبلاگ</SectionTitle>
 
       <div className="mt-6 flex-items-center flex-col gap-5 2xl:flex-row">

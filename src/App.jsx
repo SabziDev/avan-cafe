@@ -6,7 +6,7 @@ import router from "./routes";
 
 const removeAppPreloader = () => {
   setTimeout(() => {
-    document.querySelector("#app-preloader").remove();
+    document.querySelector("#app-preloader")?.remove();
     document.body.classList.remove("overflow-hidden");
   }, 300);
 };

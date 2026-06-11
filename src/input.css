@@ -3,9 +3,10 @@
 /* ============================================= -- Theme Configuration -- ============================================= */
 @theme {
   --color-primary: #02314b;
-  --color-secoundary: #6599b8;
+  --color-secondary: #6599b8;
   --color-cream: #ebe5e3;
   --color-caramel: #bc8767;
+  --color-cimarron: #89b6d1;
 
   --font-Vazir: "Vazir", Arial, Helvetica, sans-serif;
 }

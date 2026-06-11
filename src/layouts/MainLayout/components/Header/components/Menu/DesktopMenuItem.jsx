@@ -5,7 +5,7 @@ import Icon from "@/components/Icon/Icon";
 import SubMenu from "../SubMenu/DesktopSubMenu";
 
 const DesktopMenuItem = ({ menuItem }) => (
-  <li className="group/menu relative flex-center h-6 text-white transition-colors hover:text-secoundary">
+  <li className="group/menu relative flex-center h-6 text-white transition-colors hover:text-secondary">
     <Link to="#" className="flex-center gap-1">
       <Icon src={menuItem.iconSrc} className="size-6 text-white" />
       <span>{menuItem.title}</span>

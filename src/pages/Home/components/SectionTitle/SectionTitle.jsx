@@ -8,7 +8,7 @@ const SectionTitle = ({ children, isShowLink = false }) => {
       <h3 className="flex-center gap-5 font-bold">
         <div className="flex-center gap-0.5">
           <span className="size-3 rotate-45 bg-primary" />
-          <span className="size-4 bg-secoundary" />
+          <span className="size-4 bg-secondary" />
         </div>
         <span className="text-xl sm:text-2xl md:text-4xl">{children}</span>
       </h3>

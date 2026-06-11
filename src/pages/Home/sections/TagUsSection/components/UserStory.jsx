@@ -2,7 +2,12 @@ import Img from "@/components/Img/Img";
 
 const UserStory = ({ user }) => {
   return (
-    <figure className="flex-center size-22 flex-col gap-1 p-4 md:size-26 lg:size-max">
+    <a
+      href="https://instagram.com/SabziDev"
+      target="_blank"
+      rel="noreferrer noopener"
+      className="flex-center size-22 flex-col gap-1 p-4 md:size-26 lg:size-max"
+    >
       <div
         className="size-full cursor-pointer rounded-full p-1"
         style={{
@@ -15,8 +20,8 @@ const UserStory = ({ user }) => {
           className="size-full rounded-full bg-caramel p-1"
         />
       </div>
-      <figcaption className="text-xs text-white/80">{user.username}</figcaption>
-    </figure>
+      <span className="text-xs text-white/80">{user.username}</span>
+    </a>
   );
 };
 

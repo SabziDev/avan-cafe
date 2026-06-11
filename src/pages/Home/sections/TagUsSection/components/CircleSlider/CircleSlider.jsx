@@ -48,10 +48,7 @@ const CircleSlider = ({ users }) => {
         modules={[Pagination, Navigation]}
       >
         {users.map((user) => (
-          <SwiperSlide
-            key={user.id}
-            // className="size-22! p-4 md:size-26! lg:size-max!"
-          >
+          <SwiperSlide key={user.id}>
             <UserStory user={user} />
           </SwiperSlide>
         ))}

@@ -54,9 +54,9 @@ const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
                 </button>
                 <button
                   type="button"
-                  className="flex-center w-28 cursor-pointer gap-1 rounded-full bg-secoundary px-1.5 py-1 pl-2"
+                  className="flex-center w-28 cursor-pointer gap-1 rounded-full bg-secondary px-1.5 py-1 pl-2"
                 >
-                  <span className="w-[80%] rounded-full bg-white text-secoundary">
+                  <span className="w-[80%] rounded-full bg-white text-secondary">
                     ثبت‌نام
                   </span>
                   <Icon
@@ -68,7 +68,7 @@ const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
               <a href="tel:09911943412" className="flex-center gap-1">
                 <div className="flex-center flex-col">
                   <div dir="ltr">
-                    <span className="text-secoundary">+98</span>
+                    <span className="text-secondary">+98</span>
                     <span> 991 194 3412</span>
                   </div>
                   <span className="text-xs">
@@ -77,7 +77,7 @@ const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
                 </div>
                 <Icon
                   src="images/icons/icons.svg#phone"
-                  className="size-10 text-secoundary"
+                  className="size-10 text-secondary"
                 />
               </a>
             </div>

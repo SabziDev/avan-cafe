@@ -6,9 +6,6 @@ import NotFound from "./pages/NotFound/page";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <MainLayout />,
-
     children: [
       {
         index: true,
@@ -28,6 +25,8 @@ const router = createBrowserRouter([
         },
       },
     ],
+    path: "/",
+    element: <MainLayout />,
   },
 ]);
 

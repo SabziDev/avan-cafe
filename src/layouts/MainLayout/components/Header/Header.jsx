@@ -38,7 +38,7 @@ const Header = () => {
             <Login />
             <div
               onClick={toggleOpenMobileMenu}
-              className="cursor-pointer rounded-full bg-secoundary p-2 lg:hidden"
+              className="cursor-pointer rounded-full bg-secondary p-2 lg:hidden"
             >
               <Icon
                 src="/images/icons/icons.svg#four-squares-icon"
