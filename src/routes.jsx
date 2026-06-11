@@ -1,3 +1,5 @@
+/* eslint-disable custom/sort-object-props */
+
 import { createBrowserRouter, Navigate } from "react-router";
 
 import MainLayout from "./layouts/MainLayout/MainLayout";
@@ -6,6 +8,9 @@ import NotFound from "./pages/NotFound/page";
 
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <MainLayout />,
+
     children: [
       {
         index: true,
@@ -25,8 +30,6 @@ const router = createBrowserRouter([
         },
       },
     ],
-    path: "/",
-    element: <MainLayout />,
   },
 ]);
 
