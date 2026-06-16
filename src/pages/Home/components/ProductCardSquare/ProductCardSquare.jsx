@@ -31,7 +31,7 @@ const ProductCardSquare = ({
 
       <div className="mt-4 flex-items-center justify-between">
         {isShowOnlyBasket ? (
-          <button type="button" className="flex-center cursor-pointer">
+          <button type="button" className="flex-center">
             <Icon
               src="/images/icons/icons.svg#basket"
               className="size-10 cursor-pointer rounded-full bg-cream/80 p-2 text-[#A2928B] transition-colors duration-300 hover:bg-caramel hover:text-white"
@@ -40,7 +40,7 @@ const ProductCardSquare = ({
         ) : (
           <button
             type="button"
-            className="group relative flex-center h-9.5 w-32 cursor-pointer rounded-full bg-cream/80 text-[#A2928B] transition-colors duration-300 hover:bg-caramel"
+            className="group relative flex-center h-9.5 w-32 rounded-full bg-cream/80 text-[#A2928B] transition-colors duration-300 hover:bg-caramel"
           >
             <span className="absolute inset-1 left-10 z-1 flex-center rounded-full bg-white p-0.5 text-sm font-bold text-caramel transition-all duration-300 group-hover:left-1">
               سفارش بده

@@ -31,7 +31,7 @@ const Slider = ({
             <button
               id={`${id}-prev`}
               type="button"
-              className="cursor-pointer rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-caramel hover:text-white"
+              className="rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-caramel hover:text-white"
             >
               <Icon
                 src="/images/icons/icons.svg#arrow-short"
@@ -41,7 +41,7 @@ const Slider = ({
             <button
               id={`${id}-next`}
               type="button"
-              className="cursor-pointer rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-caramel hover:text-white"
+              className="rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-caramel hover:text-white"
             >
               <Icon
                 src="/images/icons/icons.svg#arrow-short"

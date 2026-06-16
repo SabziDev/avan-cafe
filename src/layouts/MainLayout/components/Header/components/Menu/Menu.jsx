@@ -42,7 +42,7 @@ const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
               <div className="mb-6 flex-center gap-4">
                 <button
                   type="button"
-                  className="flex-center w-28 cursor-pointer gap-1 rounded-full bg-cream px-1.5 py-1 pl-2 transition-colors hover:bg-caramel"
+                  className="flex-center w-28 gap-1 rounded-full bg-cream px-1.5 py-1 pl-2 transition-colors hover:bg-caramel"
                 >
                   <span className="w-[80%] rounded-full bg-white text-caramel">
                     ورود
@@ -54,7 +54,7 @@ const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
                 </button>
                 <button
                   type="button"
-                  className="flex-center w-28 cursor-pointer gap-1 rounded-full bg-secondary px-1.5 py-1 pl-2"
+                  className="flex-center w-28 gap-1 rounded-full bg-secondary px-1.5 py-1 pl-2"
                 >
                   <span className="w-[80%] rounded-full bg-white text-secondary">
                     ثبت‌نام
