@@ -52,7 +52,7 @@
     font-display: swap;
 
     src:
-      local("Vazir-Medium-FD-WOL"),
+      local("Vazir"),
       url("/fonts/Vazir/Medium.woff2") format("woff2");
   }
 }
