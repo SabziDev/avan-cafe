@@ -23,7 +23,6 @@
   [role="button"]:not(:disabled) {
     cursor: pointer;
   }
-
   input[type="number"]::-webkit-inner-spin-button {
     @apply appearance-none;
   }
