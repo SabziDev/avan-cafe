@@ -49,12 +49,11 @@
 
   @font-face {
     font-family: "Vazir";
+    font-display: swap;
 
     src:
       local("Vazir-Medium-FD-WOL"),
       url("/fonts/Vazir/Medium.woff2") format("woff2");
-
-    font-display: swap;
   }
 }
 @utility container {
