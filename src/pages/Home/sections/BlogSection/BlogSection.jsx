@@ -8,7 +8,7 @@ const BlogSection = () => {
     <section>
       <SectionTitle isShowLink>وبلاگ</SectionTitle>
 
-      <div className="mt-6 flex-items-center flex-col gap-5 2xl:flex-row">
+      <div className="mt-6 flex-items-center flex-col gap-5 pb-2.5 2xl:flex-row">
         <div className="flex-center flex-col gap-5 sm:flex-row">
           {blog.slice(0, 2).map((blogItem) => (
             <BlogCard key={blogItem.id} data={blogItem} />
