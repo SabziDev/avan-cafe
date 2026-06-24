@@ -14,7 +14,7 @@ const Basket = () => (
         <span>0</span>
         <Icon id="toman" className="size-4" />
       </div>
-      <Icon src="basket" className="size-6 text-white" />
+      <Icon id="basket" className="size-6 text-white" />
     </Link>
     <div className="absolute top-full -right-35 pt-4 lg:-right-15">
       <BasketSummary />
