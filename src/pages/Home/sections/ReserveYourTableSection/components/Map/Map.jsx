@@ -8,10 +8,7 @@ const Map = () => {
         alt="map"
         loading="lazy"
       />
-      <Btn
-        svgSrc="/images/icons/icons.svg#arrow-medium"
-        className="mt-6 w-full"
-      >
+      <Btn svgId="arrow-medium" className="mt-6 w-full">
         شروع مسیر به آوان
       </Btn>
     </div>

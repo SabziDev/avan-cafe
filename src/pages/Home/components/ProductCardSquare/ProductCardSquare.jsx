@@ -33,7 +33,7 @@ const ProductCardSquare = ({
         {isShowOnlyBasket ? (
           <button type="button" className="flex-center">
             <Icon
-              src="/images/icons/icons.svg#basket"
+              id="basket"
               className="size-10 cursor-pointer rounded-full bg-cream/80 p-2 text-[#A2928B] transition-colors duration-300 hover:bg-caramel hover:text-white"
             />
           </button>
@@ -45,10 +45,7 @@ const ProductCardSquare = ({
             <span className="absolute inset-1 left-10 z-1 flex-center rounded-full bg-white p-0.5 text-sm font-bold text-caramel transition-all duration-300 group-hover:left-1">
               سفارش بده
             </span>
-            <Icon
-              src="/images/icons/icons.svg#basket"
-              className="absolute left-2 z-0 size-6"
-            />
+            <Icon id="basket" className="absolute left-2 z-0 size-6" />
           </button>
         )}
 
@@ -60,10 +57,7 @@ const ProductCardSquare = ({
           )}
           <span className="flex-center gap-1 text-[18px] font-bold">
             {product.price.toLocaleString()}
-            <Icon
-              src="/images/icons/icons.svg#toman"
-              className="size-5 text-caramel"
-            />
+            <Icon id="toman" className="size-5 text-caramel" />
           </span>
         </div>
       </div>

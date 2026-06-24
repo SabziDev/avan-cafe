@@ -20,10 +20,7 @@ const TopFooter = () => {
             placeholder="کد پیگیری"
             className="text-xl ring-0 placeholder:text-base placeholder:text-white/50"
           />
-          <Icon
-            src="/images/icons/icons.svg#search-minus"
-            className="size-6 cursor-pointer"
-          />
+          <Icon id="search-minus" className="size-6 cursor-pointer" />
         </div>
       </div>
 
@@ -33,10 +30,7 @@ const TopFooter = () => {
           <span className="text-lg text-white/80">پشتیبانی مجموعه</span>
         </div>
         <div className="flex-center rounded-full bg-white p-2">
-          <Icon
-            src="/images/icons/icons.svg#phone"
-            className="size-7 stroke-primary"
-          />
+          <Icon id="phone" className="size-7 stroke-primary" />
         </div>
       </a>
     </div>

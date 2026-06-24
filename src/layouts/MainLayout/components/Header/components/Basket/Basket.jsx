@@ -12,12 +12,9 @@ const Basket = () => (
     >
       <div className="hidden w-[70%] justify-between rounded-full bg-white p-1.5 lg:flex-items-center">
         <span>0</span>
-        <Icon src="/images/icons/icons.svg#toman" className="size-4" />
+        <Icon id="toman" className="size-4" />
       </div>
-      <Icon
-        src="/images/icons/icons.svg#basket"
-        className="size-6 text-white"
-      />
+      <Icon src="basket" className="size-6 text-white" />
     </Link>
     <div className="absolute top-full -right-35 pt-4 lg:-right-15">
       <BasketSummary />

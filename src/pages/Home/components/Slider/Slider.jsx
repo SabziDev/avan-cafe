@@ -33,20 +33,14 @@ const Slider = ({
               type="button"
               className="rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-caramel hover:text-white"
             >
-              <Icon
-                src="/images/icons/icons.svg#arrow-short"
-                className="size-4"
-              />
+              <Icon id="arrow-short" className="size-4" />
             </button>
             <button
               id={`${id}-next`}
               type="button"
               className="rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-caramel hover:text-white"
             >
-              <Icon
-                src="/images/icons/icons.svg#arrow-short"
-                className="size-4 rotate-180"
-              />
+              <Icon id="arrow-short" className="size-4 rotate-180" />
             </button>
           </div>
         )}

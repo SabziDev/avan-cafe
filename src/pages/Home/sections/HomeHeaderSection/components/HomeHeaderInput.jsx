@@ -9,10 +9,7 @@ const HomeHeaderInput = () => {
         placeholder="دنبال چی می‌گردی؟"
         className="size-full text-xl ring-0 placeholder:text-base"
       />
-      <Icon
-        src="/images/icons/icons.svg#search"
-        className="size-6 cursor-pointer"
-      />
+      <Icon id="search" className="size-6 cursor-pointer" />
     </div>
   );
 };

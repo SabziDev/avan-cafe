@@ -23,7 +23,7 @@ const Selectbox = ({ inputField }) => {
       >
         <span>{selectboxValue}</span>
         <Icon
-          src="/images/icons/icons.svg#arrow-short"
+          id="arrow-short"
           className={clsx([
             "size-6 transition-all",
             isOpenSelectbox ? "rotate-90" : "rotate-180",

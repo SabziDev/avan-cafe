@@ -26,8 +26,8 @@ const AvanInfo = () => {
         </div>
       </div>
       <div className="flex-center gap-6">
-        <Btn svgSrc="/images/icons/icons.svg#map">گوگل مپ</Btn>
-        <Btn svgSrc="/images/icons/icons.svg#arrow-medium" isBtnActive>
+        <Btn svgId="map">گوگل مپ</Btn>
+        <Btn svgId="arrow-medium" isBtnActive>
           اطلاعات بیشتر
         </Btn>
       </div>

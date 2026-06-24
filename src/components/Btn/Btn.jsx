@@ -2,12 +2,7 @@ import clsx from "clsx";
 
 import Icon from "../Icon/Icon";
 
-const Btn = ({
-  children,
-  svgSrc = "",
-  isBtnActive = false,
-  className = "",
-}) => {
+const Btn = ({ children, svgId = "", isBtnActive = false, className = "" }) => {
   return (
     <button
       type="button"
@@ -23,7 +18,7 @@ const Btn = ({
         {children}
       </span>
       <Icon
-        src={svgSrc}
+        id={svgId}
         className={clsx([
           "size-9 transition-colors duration-300",
           isBtnActive ? "text-white" : "text-[#A2928B] group-hover:text-white",

@@ -15,7 +15,7 @@ const BlogCard = ({ cardVariant = "vertical", data }) => {
           <Img src={data.authorImgSrc} className="size-8" />
           <span className="text-primary/50">{data.author}</span>
         </div>
-        <Btn svgSrc="/images/icons/icons.svg#arrow-medium">مطالعه</Btn>
+        <Btn svgId="arrow-medium">مطالعه</Btn>
       </div>
     </article>
   ) : (
@@ -33,7 +33,7 @@ const BlogCard = ({ cardVariant = "vertical", data }) => {
             <Img src={data.authorImgSrc} className="size-8" />
             <span className="text-primary/50">{data.author}</span>
           </div>
-          <Btn svgSrc="/images/icons/icons.svg#arrow-medium">مطالعه</Btn>
+          <Btn svgId="arrow-medium">مطالعه</Btn>
         </div>
       </div>
     </article>

@@ -16,7 +16,7 @@ const MobileSubMenuItem = ({ subMenuItem, isOpen, onToggle }) => {
       >
         <span className="text-sm">{subMenuItem.title}</span>
         <Icon
-          src="/images/icons/icons.svg#dropdown-arrow"
+          id="dropdown-arrow"
           className={clsx([
             "size-3 rounded-full text-white transition-transform",
             isOpen ? "rotate-0 bg-secondary" : "rotate-90 bg-primary",

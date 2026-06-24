@@ -7,12 +7,12 @@ import SubMenu from "../SubMenu/DesktopSubMenu";
 const DesktopMenuItem = ({ menuItem }) => (
   <li className="group/menu relative flex-center h-6 text-white transition-colors hover:text-secondary">
     <Link to="#" className="flex-center gap-1">
-      <Icon src={menuItem.iconSrc} className="size-6 text-white" />
+      <Icon id={menuItem.iconSrc} className="size-6 text-white" />
       <span>{menuItem.title}</span>
 
       {menuItem.subMenu.length > 0 && (
         <Icon
-          src="/images/icons/icons.svg#dropdown-arrow"
+          id="dropdown-arrow"
           className="size-4 transition-transform group-hover/menu:rotate-180"
         />
       )}

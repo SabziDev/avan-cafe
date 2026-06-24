@@ -40,10 +40,7 @@ const Header = () => {
               onClick={toggleOpenMobileMenu}
               className="cursor-pointer rounded-full bg-secondary p-2 lg:hidden"
             >
-              <Icon
-                src="/images/icons/icons.svg#four-squares-icon"
-                className="size-6"
-              />
+              <Icon id="four-squares-icon" className="size-6" />
             </div>
           </div>
         </nav>

@@ -10,10 +10,7 @@ const Login = () => (
     <span className="absolute inset-1 left-10 flex-center rounded-full bg-white p-2 transition-all duration-300 group-hover:left-1">
       ورود | ثبت نام
     </span>
-    <Icon
-      src="/images/icons/icons.svg#login"
-      className="absolute left-2 size-6 text-white"
-    />
+    <Icon id="login" className="absolute left-2 size-6 text-white" />
   </Link>
 );
 

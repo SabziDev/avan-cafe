@@ -12,7 +12,7 @@ const ReserveYourTableForm = () => {
       <Form />
 
       <div className="mt-2 flex-end">
-        <Btn svgSrc="/images/icons/icons.svg#arrow-medium">رزرو کن</Btn>
+        <Btn svgId="arrow-medium">رزرو کن</Btn>
       </div>
     </div>
   );

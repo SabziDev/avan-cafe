@@ -26,13 +26,13 @@ const MobileMenuItem = ({ menuItem }) => {
       >
         <div className="flex-items-center w-full justify-between gap-1">
           <div className="flex-center gap-2">
-            <Icon src={menuItem.iconSrc} className="size-6 text-primary/80" />
+            <Icon id={menuItem.iconSrc} className="size-6 text-primary/80" />
             <span>{menuItem.title}</span>
           </div>
 
           {menuItem.subMenu.length > 0 && (
             <Icon
-              src="/images/icons/icons.svg#dropdown-arrow"
+              id="dropdown-arrow"
               className={clsx([
                 "size-4 rounded-full text-white transition-transform",
                 isOpenMenu ? "rotate-0 bg-secondary" : "rotate-90 bg-primary",

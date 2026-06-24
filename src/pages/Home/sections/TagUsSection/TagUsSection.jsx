@@ -20,7 +20,7 @@ const TagUsSection = () => {
           rel="noreferrer noopener"
           className="hidden lg:inline-block"
         >
-          <Btn svgSrc="/images/icons/icons.svg#insta" className="mt-2 mr-10">
+          <Btn svgId="insta" className="mt-2 mr-10">
             صفحه اینستاگرام
           </Btn>
         </a>

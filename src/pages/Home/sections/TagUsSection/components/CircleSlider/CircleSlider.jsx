@@ -17,7 +17,7 @@ const CircleSlider = ({ users }) => {
         type="button"
         className="absolute -right-4 z-20 rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-caramel hover:text-white"
       >
-        <Icon src="/images/icons/icons.svg#arrow-short" className="size-4" />
+        <Icon id="arrow-short" className="size-4" />
       </button>
 
       <Swiper
@@ -59,10 +59,7 @@ const CircleSlider = ({ users }) => {
         type="button"
         className="absolute -left-1 z-20 rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-caramel hover:text-white"
       >
-        <Icon
-          src="/images/icons/icons.svg#arrow-short"
-          className="size-4 rotate-180"
-        />
+        <Icon id="arrow-short" className="size-4 rotate-180" />
       </button>
     </div>
   );

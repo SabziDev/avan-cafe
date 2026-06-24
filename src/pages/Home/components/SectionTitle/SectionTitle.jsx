@@ -17,10 +17,7 @@ const SectionTitle = ({ children, isShowLink = false }) => {
           <span className="text-md transition-all group-hover:underline group-hover:underline-offset-2 sm:text-lg md:text-xl">
             مشاهده همه
           </span>
-          <Icon
-            src="/images/icons/icons.svg#arrow-long"
-            className="size-6 rotate-45"
-          />
+          <Icon id="arrow-long" className="size-6 rotate-45" />
         </Link>
       )}
     </div>

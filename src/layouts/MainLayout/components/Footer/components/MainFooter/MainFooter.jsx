@@ -59,11 +59,7 @@ const MainFooter = () => {
               placeholder="ایمیل خود را وارد کنید"
               className="w-35 text-xl ring-0 placeholder:text-sm placeholder:text-white/50 sm:w-auto"
             />
-            <Btn
-              isBtnActive
-              svgSrc="/images/icons/icons.svg#arrow-medium"
-              className="max-w40"
-            >
+            <Btn isBtnActive svgId="arrow-medium" className="max-w40">
               ثبت
             </Btn>
           </div>

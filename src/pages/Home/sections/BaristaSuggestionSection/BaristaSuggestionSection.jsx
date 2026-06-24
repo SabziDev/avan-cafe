@@ -29,16 +29,10 @@ const BaristaSuggestionSection = () => {
             />
           </div>
           <div className="mt-6 flex-items-center flex-col justify-end gap-4 px-12 2xl:flex-row">
-            <Btn
-              svgSrc="/images/icons/icons.svg#arrow-medium"
-              className="w-full 2xl:w-auto"
-            >
+            <Btn svgId="arrow-medium" className="w-full 2xl:w-auto">
               سفارش کامل پیشنهاد باریستا
             </Btn>
-            <Btn
-              svgSrc="/images/icons/icons.svg#arrow-medium"
-              className="w-full 2xl:w-auto"
-            >
+            <Btn svgId="/arrow-medium" className="w-full 2xl:w-auto">
               سفارش موارد انتخاب شده
             </Btn>
           </div>

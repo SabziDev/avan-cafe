@@ -1,6 +1,6 @@
-const Icon = ({ src = "", className = "", ...restProps }) => (
+const Icon = ({ id = "", className = "", ...restProps }) => (
   <svg className={className} {...restProps}>
-    <use href={src} />
+    <use href={`/images/icons/icons.svg#${id}`} />
   </svg>
 );
 

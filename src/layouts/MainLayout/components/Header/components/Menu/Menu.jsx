@@ -47,10 +47,7 @@ const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
                   <span className="w-[80%] rounded-full bg-white text-caramel">
                     ورود
                   </span>
-                  <Icon
-                    src="/images/icons/icons.svg#arrow-long"
-                    className="size-4.5 text-primary/60"
-                  />
+                  <Icon id="arrow-long" className="size-4.5 text-primary/60" />
                 </button>
                 <button
                   type="button"
@@ -59,15 +56,12 @@ const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
                   <span className="w-[80%] rounded-full bg-white text-secondary">
                     ثبت‌نام
                   </span>
-                  <Icon
-                    src="/images/icons/icons.svg#login"
-                    className="size-4.5 text-primary/60"
-                  />
+                  <Icon id="login" className="size-4.5 text-primary/60" />
                 </button>
               </div>
               <a href="tel:09911943412" className="flex-center gap-1">
                 <div className="flex-center flex-col">
-                  <div dir="ltr">
+                  <div className="ltr">
                     <span className="text-secondary">+98</span>
                     <span> 991 194 3412</span>
                   </div>
@@ -75,10 +69,7 @@ const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
                     همین حالا با پشتیبانی ما تماس بگیر
                   </span>
                 </div>
-                <Icon
-                  src="images/icons/icons.svg#phone"
-                  className="size-10 text-secondary"
-                />
+                <Icon id="phone" className="size-10 text-secondary" />
               </a>
             </div>
           </div>

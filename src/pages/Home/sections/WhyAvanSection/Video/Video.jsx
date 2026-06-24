@@ -48,7 +48,7 @@ const Video = () => {
           className="hidden cursor-pointer rounded-full bg-white px-4 py-2 text-caramel min-[502px]:flex-center min-[502px]:gap-2"
         >
           <span>صفحه اینستاگرام</span>
-          <Icon src="/images/icons/icons.svg#insta" className="size-6.5" />
+          <Icon id="insta" className="size-6.5" />
         </a>
       </div>
     </div>

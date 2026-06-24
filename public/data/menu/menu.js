@@ -2,7 +2,7 @@ const menu = [
   {
     id: 1,
     title: "دسته‌بندی محصولات",
-    iconSrc: "/images/icons/icons.svg#product-category",
+    iconSrc: "product-category",
     subMenu: [
       {
         id: 101,
@@ -120,13 +120,13 @@ const menu = [
   {
     id: 2,
     title: "درباره ما",
-    iconSrc: "/images/icons/icons.svg#aboutus-category",
+    iconSrc: "aboutus-category",
     subMenu: [],
   },
   {
     id: 3,
     title: "تماس با ما",
-    iconSrc: "/images/icons/icons.svg#contactus-category",
+    iconSrc: "contactus-category",
     subMenu: [],
   },
 ];
