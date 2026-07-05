@@ -72,9 +72,8 @@ const sortComments = {
               context.report({
                 node,
                 messageId: "reorganize",
-                fix(fixer) {
-                  return fixer.replaceTextRange([0, text.length], finalCode);
-                },
+                fix: (fixer) =>
+                  fixer.replaceTextRange([0, text.length], finalCode),
               });
             }
           },

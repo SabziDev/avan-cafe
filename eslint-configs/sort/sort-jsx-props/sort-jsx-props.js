@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-duplicate-if-branches */
 /* eslint-disable unicorn/consistent-function-scoping */
 
 import {
@@ -88,7 +89,7 @@ const sortJsxProps = {
               ...spreads,
             ];
 
-            let needsFix = false;
+            let isNeedsFix = false;
 
             const currentOrder = [];
 
@@ -102,16 +103,18 @@ const sortJsxProps = {
 
             if (currentOrder.length === sortedNormal.length) {
               for (const [i, element] of currentOrder.entries()) {
-                if (element !== sortedNormal[i]) {
-                  needsFix = true;
-                  break;
+                if (element === sortedNormal[i]) {
+                  continue;
                 }
+
+                isNeedsFix = true;
+                break;
               }
             } else {
-              needsFix = true;
+              isNeedsFix = true;
             }
 
-            if (!needsFix) return;
+            if (!isNeedsFix) return;
 
             const opening = `<${sourceCode.getText(node.name)} ${sortedNormal
               .map((attr) => sourceCode.getText(attr))
@@ -120,12 +123,8 @@ const sortJsxProps = {
             context.report({
               node,
               messageId: "wrongOrder",
-              fix(fixer) {
-                return fixer.replaceTextRange(
-                  [node.range[0], node.range[1]],
-                  opening,
-                );
-              },
+              fix: (fixer) =>
+                fixer.replaceTextRange([node.range[0], node.range[1]], opening),
             });
           },
         };

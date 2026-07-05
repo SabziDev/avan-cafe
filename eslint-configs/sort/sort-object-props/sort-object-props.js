@@ -1,3 +1,5 @@
+/* eslint-disable unicorn/prefer-includes-over-repeated-comparisons */
+/* eslint-disable unicorn/no-break-in-nested-loop */
 /* eslint-disable max-lines-per-function */
 /* eslint-disable unicorn/consistent-function-scoping */
 
@@ -138,16 +140,18 @@ const sortObjectProps = {
 
             const sorted = sortPropertiesWithSpreadBarriers(properties);
 
-            let needsFix = false;
+            let isNeedsFix = false;
 
             for (const [i, prop] of properties.entries()) {
-              if (prop !== sorted[i]) {
-                needsFix = true;
-                break;
+              if (prop === sorted[i]) {
+                continue;
               }
+
+              isNeedsFix = true;
+              break;
             }
 
-            if (!needsFix) return;
+            if (!isNeedsFix) return;
 
             context.report({
               node,
@@ -172,16 +176,18 @@ const sortObjectProps = {
             const sortedNonSpreads = sortItems(nonSpreads);
             const sorted = [...sortedNonSpreads, ...spreads];
 
-            let needsFix = false;
+            let isNeedsFix = false;
 
             for (const [i, prop] of properties.entries()) {
-              if (prop !== sorted[i]) {
-                needsFix = true;
-                break;
+              if (prop === sorted[i]) {
+                continue;
               }
+
+              isNeedsFix = true;
+              break;
             }
 
-            if (!needsFix) return;
+            if (!isNeedsFix) return;
 
             context.report({
               node,
@@ -201,34 +207,38 @@ const sortObjectProps = {
             if (!params || params.length === 0) return;
 
             for (const param of params) {
-              if (param.type === "ObjectPattern") {
-                const nonSpreads = param.properties.filter((p) => !isSpread(p));
-                const spreads = param.properties.filter((p) => isSpread(p));
-                const sortedNonSpreads = sortItems(nonSpreads);
-                const sortedProps = [...sortedNonSpreads, ...spreads];
+              if (param.type !== "ObjectPattern") {
+                continue;
+              }
 
-                let needsFix = false;
+              const nonSpreads = param.properties.filter((p) => !isSpread(p));
+              const spreads = param.properties.filter((p) => isSpread(p));
+              const sortedNonSpreads = sortItems(nonSpreads);
+              const sortedProps = [...sortedNonSpreads, ...spreads];
 
-                for (const [i, prop] of param.properties.entries()) {
-                  if (prop !== sortedProps[i]) {
-                    needsFix = true;
-                    break;
-                  }
+              let isNeedsFix = false;
+
+              for (const [i, prop] of param.properties.entries()) {
+                if (prop === sortedProps[i]) {
+                  continue;
                 }
 
-                if (needsFix) {
-                  context.report({
-                    node: param,
-                    messageId: "wrongParams",
-                    fix(fixer) {
-                      const propsText = sortedProps
-                        .map((p) => sourceCode.getText(p))
-                        .join(", ");
+                isNeedsFix = true;
+                break;
+              }
 
-                      return fixer.replaceText(param, `{ ${propsText} }`);
-                    },
-                  });
-                }
+              if (isNeedsFix) {
+                context.report({
+                  node: param,
+                  messageId: "wrongParams",
+                  fix(fixer) {
+                    const propsText = sortedProps
+                      .map((p) => sourceCode.getText(p))
+                      .join(", ");
+
+                    return fixer.replaceText(param, `{ ${propsText} }`);
+                  },
+                });
               }
             }
           },

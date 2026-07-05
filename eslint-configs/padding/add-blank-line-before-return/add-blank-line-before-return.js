@@ -22,9 +22,7 @@ const addBlankLineBeforeReturn = {
 
           const { type: prevType } = parentBody[index - 1];
 
-          if (prevType === "ReturnStatement") return false;
-
-          return true;
+          return prevType !== "ReturnStatement";
         };
 
         const isOnlyStatementInBlock = (node) => {
@@ -143,9 +141,7 @@ const addBlankLineBeforeReturn = {
                 context.report({
                   node,
                   messageId: "missingBlankLine",
-                  fix(fixer) {
-                    return fixer.insertTextBefore(prevToken, "\n");
-                  },
+                  fix: (fixer) => fixer.insertTextBefore(prevToken, "\n"),
                 });
               }
 
@@ -166,9 +162,7 @@ const addBlankLineBeforeReturn = {
             context.report({
               node,
               messageId: "missingBlankLine",
-              fix(fixer) {
-                return fixer.insertTextBefore(node, "\n");
-              },
+              fix: (fixer) => fixer.insertTextBefore(node, "\n"),
             });
           },
         };

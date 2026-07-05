@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-unreadable-for-of-expression */
 /* eslint-disable unicorn/consistent-function-scoping */
 
 const mergeExports = {
@@ -54,12 +55,11 @@ const mergeExports = {
                 node: body[start],
                 messageId: "mergeExports",
 
-                fix(fixer) {
-                  return fixer.replaceTextRange(
+                fix: (fixer) =>
+                  fixer.replaceTextRange(
                     [body[start].range[0], body[end].range[1]],
                     `export { ${specifiers.join(", ")} };`,
-                  );
-                },
+                  ),
               });
 
               start = end;
@@ -69,11 +69,13 @@ const mergeExports = {
             let defaultExportIndex = -1;
 
             for (const [i, element] of body.entries()) {
-              if (isDefaultExport(element)) {
-                defaultExportNode = element;
-                defaultExportIndex = i;
-                break;
+              if (!isDefaultExport(element)) {
+                continue;
               }
+
+              defaultExportNode = element;
+              defaultExportIndex = i;
+              break;
             }
 
             if (defaultExportNode && defaultExportIndex !== body.length - 1) {

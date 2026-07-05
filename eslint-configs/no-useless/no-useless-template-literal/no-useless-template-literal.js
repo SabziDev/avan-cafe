@@ -36,9 +36,7 @@ const noUselessTemplateLiteral = {
             context.report({
               node,
               messageId: "remove",
-              fix(fixer) {
-                return fixer.replaceText(node, expressionText);
-              },
+              fix: (fixer) => fixer.replaceText(node, expressionText),
             });
           },
         };
