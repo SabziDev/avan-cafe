@@ -20,7 +20,7 @@ const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
             onClick={toggleOpenMobileMenu}
             className="fixed inset-0 z-199 h-screen bg-black/50 lg:hidden"
           />
-          <div className="fixed inset-y-0 right-0 z-200 flex h-screen w-[80%] scrollbar-thin scrollbar-thumb-primary flex-col justify-between overflow-y-auto bg-white px-6 pt-4 pb-30 lg:hidden">
+          <div className="fixed inset-y-0 right-0 z-200 flex h-screen w-[80%] flex-col justify-between overflow-y-auto bg-white px-6 pt-4 pb-30 lg:hidden">
             <div className="flex-center flex-col gap-10">
               <Link to="/" className="w-full rounded-xl bg-primary px-6 py-3">
                 <div className="h-10 w-32.5">
