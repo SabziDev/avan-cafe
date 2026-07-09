@@ -30,8 +30,17 @@
   html::-webkit-scrollbar-corner {
     @apply bg-transparent;
   }
-  *:not(html) {
-    @apply scrollbar-thin scrollbar-thumb-primary;
+  *:not(html)::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+  *:not(html)::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-full;
+  }
+  *:not(html)::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/80;
+  }
+  *:not(html)::-webkit-scrollbar-corner {
+    @apply bg-transparent;
   }
 
   input,
