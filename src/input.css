@@ -30,16 +30,16 @@
   html::-webkit-scrollbar-corner {
     @apply bg-transparent;
   }
-  *:not(html)::-webkit-scrollbar {
+  *:not(html) ::-webkit-scrollbar {
     @apply size-1.5;
   }
-  *:not(html)::-webkit-scrollbar-thumb {
+  *:not(html) ::-webkit-scrollbar-thumb {
     @apply bg-primary rounded-full;
   }
-  *:not(html)::-webkit-scrollbar-thumb:hover {
+  *:not(html) ::-webkit-scrollbar-thumb:hover {
     @apply bg-primary/80;
   }
-  *:not(html)::-webkit-scrollbar-corner {
+  *:not(html) ::-webkit-scrollbar-corner {
     @apply bg-transparent;
   }
 
