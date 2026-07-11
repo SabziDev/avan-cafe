@@ -19,7 +19,7 @@
     @apply scroll-smooth selection:bg-caramel selection:text-primary;
   }
   html::-webkit-scrollbar {
-    @apply w-2.5;
+    @apply size-2.5;
   }
   html::-webkit-scrollbar-thumb {
     @apply bg-secondary;
@@ -31,7 +31,7 @@
     @apply bg-transparent;
   }
   *:not(html)::-webkit-scrollbar {
-    @apply w-1.5;
+    @apply size-1.5;
   }
   *:not(html)::-webkit-scrollbar-thumb {
     @apply bg-primary rounded-full;
