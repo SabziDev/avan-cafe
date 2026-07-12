@@ -37,13 +37,13 @@ const MainFooter = () => {
           <div className="flex-center gap-2 transition-colors *:flex-center *:h-14 *:w-35 *:cursor-pointer *:rounded-full *:bg-cimarron *:text-[18px] *:text-white *:hover:bg-cimarron/80 2xl:*:w-50">
             <div>
               <img
-                src="/images/pictures/layouts/footer/enamad.png"
+                src="/images/pictures/layouts/footer/enamad.webp"
                 alt="enmad"
               />
             </div>
             <div>
               <img
-                src="/images/pictures/layouts/footer/samandehi.png"
+                src="/images/pictures/layouts/footer/samandehi.webp"
                 alt="samandehi"
               />
             </div>

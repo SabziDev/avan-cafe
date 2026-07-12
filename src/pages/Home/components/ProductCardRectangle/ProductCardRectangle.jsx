@@ -21,7 +21,7 @@ const ProductCardRectangle = ({ product }) => {
         <div className="flex-items-center w-full justify-between">
           <h3 className="mr-6">{product.title}</h3>
           <Img
-            src="/images/icons/tik.png"
+            src="/images/icons/tik.webp"
             className="size-4.5 cursor-pointer rounded-full"
           />
         </div>

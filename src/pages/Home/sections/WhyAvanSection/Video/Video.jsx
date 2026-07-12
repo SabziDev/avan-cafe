@@ -4,8 +4,8 @@ const Video = () => {
   return (
     <div className="mt-8 flex-center flex-col">
       <video
-        src="/videos/pages/home/why-avan-section/sample-video.mp4"
-        poster="/videos/pages/home/why-avan-section/sample-video-cover.png"
+        src="/videos/pages/home/why-avan-section/sample-video.webm"
+        poster="/videos/pages/home/why-avan-section/sample-video-cover.webp"
         controls
         className="w-200 rounded-4xl border border-primary/20 xl:w-120"
       >
@@ -13,7 +13,7 @@ const Video = () => {
       </video>
       <div className="mt-6 flex-items-center h-15 w-80 justify-between gap-2 rounded-full bg-[#D7CCC8] px-6 min-[502px]:h-20 min-[502px]:w-full">
         <img
-          src="/images/pictures/pages/home/why-avan-section/insta.png"
+          src="/images/pictures/pages/home/why-avan-section/insta.webp"
           alt="insta"
           className="scale-80 pb-7"
         />
@@ -24,7 +24,7 @@ const Video = () => {
             rel="noreferrer noopener"
           >
             <img
-              src="/images/pictures/pages/home/why-avan-section/telegram.png"
+              src="/images/pictures/pages/home/why-avan-section/telegram.webp"
               alt="telegram"
               className="cursor-pointer"
             />
@@ -35,7 +35,7 @@ const Video = () => {
             rel="noreferrer noopener"
           >
             <img
-              src="/images/pictures/pages/home/why-avan-section/youtube.png"
+              src="/images/pictures/pages/home/why-avan-section/youtube.webp"
               alt="youtube"
               className="cursor-pointer"
             />

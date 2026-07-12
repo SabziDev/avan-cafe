@@ -5,7 +5,7 @@ const TopFooter = () => {
     <div className="flex-items-center flex-col justify-between divide-y divide-white/20 *:w-full *:py-6 *:first:pt-0 lg:flex-row lg:divide-y-0 lg:*:w-auto">
       <div className="flex-center">
         <img
-          src="/images/app-logo--light.png"
+          src="/images/app-logo--light.webp"
           alt="avan-coffee"
           className="h-15 w-45"
         />

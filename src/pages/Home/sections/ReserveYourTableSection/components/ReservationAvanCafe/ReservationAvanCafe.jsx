@@ -2,7 +2,7 @@ const ReservationAvanCafe = () => {
   return (
     <div className="flex-center h-106 flex-col rounded-2xl bg-white px-5 py-4 shadow-2xl">
       <img
-        src="/images/pictures/pages/home/reserve-your-table-section/reservation-avan-cafe.png"
+        src="/images/pictures/pages/home/reserve-your-table-section/reservation-avan-cafe.webp"
         alt="map"
         loading="lazy"
       />

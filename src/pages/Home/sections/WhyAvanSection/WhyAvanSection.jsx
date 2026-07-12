@@ -13,7 +13,7 @@ const WhyAvanSection = () => {
           <Video />
         </div>
         <img
-          src="/images/shapes/pages/home/why-avan-section/humberger.png"
+          src="/images/shapes/pages/home/why-avan-section/humberger.webp"
           alt="humberger-section"
           className="absolute -left-15 mt-2 sm:-left-20 md:-left-60 md:-mt-12 md:scale-70 lg:-left-42 lg:scale-90 xl:-left-110 xl:scale-90 2xl:-left-80 2xl:scale-100"
         />

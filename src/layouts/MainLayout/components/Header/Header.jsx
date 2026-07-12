@@ -19,7 +19,7 @@ const Header = () => {
             <Link to="/">
               <div className="h-10 w-32.5">
                 <img
-                  src="/images/app-logo.png"
+                  src="/images/app-logo.webp"
                   alt="avan-coffee"
                   className="size-full"
                 />

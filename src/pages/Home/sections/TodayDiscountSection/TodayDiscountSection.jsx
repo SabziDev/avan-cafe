@@ -6,7 +6,7 @@ const TodayDiscountSection = () => {
   return (
     <section className="flex-center flex-col gap-4 sm:flex-row">
       <img
-        src="/images/shapes/pages/home/today-discount-section/discount.png"
+        src="/images/shapes/pages/home/today-discount-section/discount.webp"
         alt="discount-section"
       />
 

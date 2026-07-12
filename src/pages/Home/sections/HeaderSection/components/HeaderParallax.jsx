@@ -71,7 +71,7 @@ const HeaderParallax = () => {
         style={mainParallax}
       >
         <img
-          src="/images/pictures/pages/home/hero-section/coffee-main.png"
+          src="/images/pictures/pages/home/hero-section/coffee-main.webp"
           alt="Coffee bottle"
         />
       </motion.div>
@@ -83,7 +83,7 @@ const HeaderParallax = () => {
             style={coffeeParallax}
           >
             <img
-              src="/images/pictures/pages/home/hero-section/coffee-1.png"
+              src="/images/pictures/pages/home/hero-section/coffee-1.webp"
               alt="Coffee piece 1"
             />
           </motion.div>
@@ -93,7 +93,7 @@ const HeaderParallax = () => {
             style={coffeeParallax}
           >
             <img
-              src="/images/pictures/pages/home/hero-section/coffee-2.png"
+              src="/images/pictures/pages/home/hero-section/coffee-2.webp"
               alt="Coffee piece 2"
             />
           </motion.div>
@@ -103,7 +103,7 @@ const HeaderParallax = () => {
             style={coffeeParallax}
           >
             <img
-              src="/images/pictures/pages/home/hero-section/coffee-3.png"
+              src="/images/pictures/pages/home/hero-section/coffee-3.webp"
               alt="Coffee piece 3"
             />
           </motion.div>

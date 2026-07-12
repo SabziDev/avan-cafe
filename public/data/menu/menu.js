@@ -7,7 +7,7 @@ const menu = [
       {
         id: 101,
         title: "نوشیدنی گرم",
-        iconSrc: "/images/pictures/products/types/category-img-1.png",
+        iconSrc: "/images/pictures/products/types/category-img-1.webp",
         subCategory: [
           { id: 10_101, title: "اسپرسو" },
           { id: 10_102, title: "اسپرسو دابل" },
@@ -39,7 +39,7 @@ const menu = [
       {
         id: 102,
         title: "بستنی",
-        iconSrc: "/images/pictures/products/types/category-img-2.png",
+        iconSrc: "/images/pictures/products/types/category-img-2.webp",
         subCategory: [
           { id: 10_201, title: "بستنی توت فرنگی" },
           { id: 10_202, title: "بستنی موزی" },
@@ -56,7 +56,7 @@ const menu = [
       {
         id: 103,
         title: "آبمیوه",
-        iconSrc: "/images/pictures/products/types/category-img-3.png",
+        iconSrc: "/images/pictures/products/types/category-img-3.webp",
         subCategory: [
           { id: 10_301, title: "آب پرتقال طبیعی" },
           { id: 10_302, title: "آب هویج طبیعی" },
@@ -74,7 +74,7 @@ const menu = [
       {
         id: 104,
         title: "آیس‌پک",
-        iconSrc: "/images/pictures/products/types/category-img-4.png",
+        iconSrc: "/images/pictures/products/types/category-img-4.webp",
         subCategory: [
           { id: 10_401, title: "آیس پک شکلاتی" },
           { id: 10_402, title: "آیس پک پرتقالی" },
@@ -87,7 +87,7 @@ const menu = [
       {
         id: 105,
         title: "سوخاری",
-        iconSrc: "/images/pictures/products/types/category-img-5.png",
+        iconSrc: "/images/pictures/products/types/category-img-5.webp",
         subCategory: [
           { id: 10_501, title: "سوخاری 1 تکه اسپایسی" },
           { id: 10_502, title: "سوخاری 2 تکه اسپایسی" },
@@ -102,7 +102,7 @@ const menu = [
       {
         id: 106,
         title: "ساندویچ",
-        iconSrc: "/images/pictures/products/types/category-img-6.png",
+        iconSrc: "/images/pictures/products/types/category-img-6.webp",
         subCategory: [
           { id: 10_601, title: "ساندویچ همبرگر" },
           { id: 10_602, title: "ساندویچ هات داگ" },

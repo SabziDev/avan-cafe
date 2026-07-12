@@ -6,7 +6,7 @@ const BaristaSuggestionSection = () => {
   return (
     <section className="flex-center flex-col gap-4 lg:flex-row">
       <img
-        src="/images/pictures/pages/home/barista-suggestion-section/barista.png"
+        src="/images/pictures/pages/home/barista-suggestion-section/barista.webp"
         alt="barista"
         className="mb-8"
       />
@@ -17,14 +17,14 @@ const BaristaSuggestionSection = () => {
               product={{
                 title: "قهوه ترک - بزرگ",
                 price: 190_000,
-                imgSrc: "/images/pictures/products/coffee-cup.png",
+                imgSrc: "/images/pictures/products/coffee-cup.webp",
               }}
             />
             <ProductCardRectangle
               product={{
                 title: "کیک لیمو - بزرگ",
                 price: 190_000,
-                imgSrc: "/images/pictures/products/cake-red.png",
+                imgSrc: "/images/pictures/products/cake-red.webp",
               }}
             />
           </div>
