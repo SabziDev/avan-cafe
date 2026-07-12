@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="mt-4">
       <div className="container">
-        <nav className="relative z-100 flex-items-center justify-between rounded-xl bg-primary px-6 py-3">
+        <nav className="relative z-100 flex-items-center justify-between rounded-t-2xl bg-primary px-6 py-3">
           <div className="flex-center gap-5 xl:gap-10">
             <Link to="/">
               <div className="h-10 w-32.5">

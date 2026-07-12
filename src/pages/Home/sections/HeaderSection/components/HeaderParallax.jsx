@@ -1,7 +1,7 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const HomeHeaderParallax = () => {
+const HeaderParallax = () => {
   const [windowSize, setWindowSize] = useState({
     width: 0,
     height: 0,
@@ -113,4 +113,4 @@ const HomeHeaderParallax = () => {
   );
 };
 
-export default HomeHeaderParallax;
+export default HeaderParallax;

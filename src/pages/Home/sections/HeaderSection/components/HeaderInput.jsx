@@ -1,6 +1,6 @@
 import Icon from "@/components/Icon/Icon";
 
-const HomeHeaderInput = () => {
+const HeaderInput = () => {
   return (
     <div className="mx-auto flex-center h-12 w-[90%] rounded-full bg-cream px-6">
       <input
@@ -14,4 +14,4 @@ const HomeHeaderInput = () => {
   );
 };
 
-export default HomeHeaderInput;
+export default HeaderInput;

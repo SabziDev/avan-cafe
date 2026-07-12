@@ -17,7 +17,11 @@ const RootLayout = () => {
       {!isHideLayout && <Header />}
 
       <main id="main-root" className="mb-40 overflow-hidden">
-        {isPage404 ? outlet : <div className="container *:mt-25">{outlet}</div>}
+        {isPage404 ? (
+          outlet
+        ) : (
+          <div className="container *:not-first:mt-25">{outlet}</div>
+        )}
       </main>
 
       {!isHideLayout && <Footer />}

@@ -6,7 +6,7 @@ import BlogSection from "./sections/BlogSection/BlogSection";
 import DessertSection from "./sections/DessertSection/DessertSection";
 import DrinkProductsSection from "./sections/DrinkProductsSection/DrinkProductsSection";
 import FastFoodSection from "./sections/FastFoodSection/FastFoodSection";
-import HomeHeaderSection from "./sections/HomeHeaderSection/HomeHeaderSection";
+import HeaderSection from "./sections/HeaderSection/HeaderSection";
 import ProductsTypesSection from "./sections/ProductsTypesSection/ProductsTypesSection";
 import ReserveYourTableSection from "./sections/ReserveYourTableSection/ReserveYourTableSection";
 import TagUsSection from "./sections/TagUsSection/TagUsSection";
@@ -21,7 +21,7 @@ const Home = () => {
         <meta name="description" content={pagesMeta.home.desc} />
       </Head>
 
-      <HomeHeaderSection />
+      <HeaderSection />
       <ProductsTypesSection />
       <DrinkProductsSection />
       <WhyAvanSection />
