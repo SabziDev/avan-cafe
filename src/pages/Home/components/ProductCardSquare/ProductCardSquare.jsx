@@ -22,6 +22,7 @@ const ProductCardSquare = ({
       <Img
         src={product.imgSrc}
         alt="product"
+        loading="lazy"
         className="relative z-20 mx-auto mt-6 size-25 rounded-2xl"
       />
       <h3>{product.title}</h3>

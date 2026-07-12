@@ -49,6 +49,7 @@ const TagUsSection = () => {
         <img
           src="/images/pictures/pages/home/tag-us/insta-mobile.webp"
           alt="insta-mobile"
+          loading="lazy"
           className="absolute -bottom-80 h-130 w-80"
         />
       </div>
