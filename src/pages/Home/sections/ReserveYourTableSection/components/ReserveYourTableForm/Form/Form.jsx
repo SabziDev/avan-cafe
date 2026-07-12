@@ -2,11 +2,11 @@
 
 import reserveYourTableSectionFormFields from "@public/data/form-fields/pages/home/reserve-your-table-section";
 
-import NumInput from "@/components/NumInput/numInput";
+import NumInput from "./components/NumInput/NumInput";
 
-import Input from "./Input";
-import Selectbox from "./Selectbox";
-import Textarea from "./Textarea";
+import Input from "./components/Input/Input";
+import Selectbox from "./components/Selectbox/Selectbox";
+import Textarea from "./components/Textarea/Textarea";
 
 const Form = () => {
   return (
