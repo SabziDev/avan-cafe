@@ -1,5 +1,3 @@
-/* eslint-disable unicorn/prefer-includes-over-repeated-comparisons */
-/* eslint-disable unicorn/no-break-in-nested-loop */
 /* eslint-disable max-lines-per-function */
 /* eslint-disable unicorn/consistent-function-scoping */
 

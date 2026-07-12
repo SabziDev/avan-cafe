@@ -6,6 +6,7 @@ const Video = () => {
       <video
         src="/videos/pages/home/why-avan-section/sample-video.webm"
         poster="/videos/pages/home/why-avan-section/sample-video-cover.webp"
+        preload="none"
         controls
         className="w-200 rounded-4xl border border-primary/20 xl:w-120"
       >

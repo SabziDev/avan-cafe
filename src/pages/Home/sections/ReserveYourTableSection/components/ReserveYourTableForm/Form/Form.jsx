@@ -2,9 +2,8 @@
 
 import reserveYourTableSectionFormFields from "@public/data/form-fields/pages/home/reserve-your-table-section";
 
-import NumInput from "./components/NumInput/NumInput";
-
 import Input from "./components/Input/Input";
+import NumInput from "./components/NumInput/NumInput";
 import Selectbox from "./components/Selectbox/Selectbox";
 import Textarea from "./components/Textarea/Textarea";
 
