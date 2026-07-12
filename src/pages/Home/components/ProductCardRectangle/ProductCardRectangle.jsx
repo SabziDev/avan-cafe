@@ -6,8 +6,8 @@ const ProductCardRectangle = ({ product }) => {
   return (
     <article
       className="
-        relative flex-items-center w-90 cursor-default overflow-hidden rounded-3xl p-8 shadow-[0_0_6px_rgba(0,0,0,0.1)] select-none before:content-(--label)
-        after:absolute after:inset-0 after:right-14 after:my-auto after:h-[90%] after:w-8 after:rounded-full after:bg-cream after:transition-colors after:duration-300 hover:after:bg-caramel
+        relative flex-items-center w-82 cursor-default overflow-hidden rounded-3xl p-8 shadow-[0_0_6px_rgba(0,0,0,0.1)] select-none before:content-(--label)
+        after:absolute after:inset-0 after:right-11 after:my-auto after:h-[90%] after:w-8 after:rounded-full after:bg-cream after:transition-colors after:duration-300 hover:after:bg-caramel
         sm:w-100
         sm:after:right-12"
     >

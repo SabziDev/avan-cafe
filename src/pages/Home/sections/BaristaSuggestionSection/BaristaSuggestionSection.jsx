@@ -32,7 +32,7 @@ const BaristaSuggestionSection = () => {
             <Btn svgId="arrow-medium" className="w-full 2xl:w-auto">
               سفارش کامل پیشنهاد باریستا
             </Btn>
-            <Btn svgId="/arrow-medium" className="w-full 2xl:w-auto">
+            <Btn svgId="arrow-medium" className="w-full 2xl:w-auto">
               سفارش موارد انتخاب شده
             </Btn>
           </div>

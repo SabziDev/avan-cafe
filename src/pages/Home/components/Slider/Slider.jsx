@@ -81,7 +81,7 @@ const Slider = ({
           : products.map((product) => (
               <SwiperSlide
                 key={product.id}
-                className="w-93! p-2 sm:ml-4 sm:w-100!"
+                className="w-86! p-2 sm:ml-4 sm:w-100!"
               >
                 <ProductCardRectangle
                   product={product}
