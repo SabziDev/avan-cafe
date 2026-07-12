@@ -5,17 +5,14 @@ import logDeveloperSignature from "./components/DeveloperSignature/logDeveloperS
 import router from "./routes";
 
 const removeAppPreloader = () => {
-  setTimeout(() => {
-    document.querySelector("#app-preloader")?.remove();
-    document.body.classList.remove("overflow-hidden");
-  }, 1000);
+  document.querySelector("#app-preloader")?.remove();
+  document.body.classList.remove("overflow-hidden");
 };
 
 const App = () => {
   useEffect(() => {
-    removeAppPreloader();
-
     logDeveloperSignature();
+    removeAppPreloader();
   }, []);
 
   return <RouterProvider router={router} />;
