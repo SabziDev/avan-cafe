@@ -30,7 +30,7 @@ const ProductCardSquare = ({
         {product.desc}
       </span>
 
-      <div className="mt-4 flex-items-center justify-between">
+      <div className="mt-4 flex-items-center gap-1.5 justify-between">
         {isShowOnlyBasket ? (
           <button type="button" className="flex-center">
             <Icon

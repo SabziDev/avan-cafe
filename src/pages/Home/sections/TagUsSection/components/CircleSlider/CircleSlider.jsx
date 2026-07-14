@@ -15,7 +15,7 @@ const CircleSlider = ({ users }) => {
       <button
         id={`${id}-prev`}
         type="button"
-        className="absolute -right-4 z-20 rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-caramel hover:text-white"
+        className="absolute -right-4 z-20 rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-[#A17052] hover:text-white"
       >
         <Icon id="arrow-short" className="size-4" />
       </button>
@@ -57,7 +57,7 @@ const CircleSlider = ({ users }) => {
       <button
         id={`${id}-next`}
         type="button"
-        className="absolute -left-1 z-20 rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-caramel hover:text-white"
+        className="absolute -left-1 z-20 rounded-full bg-[#d7ccc8] p-1 text-[#A2928B] transition-colors hover:bg-[#A17052] hover:text-white"
       >
         <Icon id="arrow-short" className="size-4 rotate-180" />
       </button>
