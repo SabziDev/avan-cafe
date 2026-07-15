@@ -53,7 +53,7 @@ const ProductCardSquare = ({
         <div className="flex-center flex-col">
           {isShowDiscount && (
             <del className="text-[18px] font-bold text-primary/50">
-              {(product.price - 20_000).toLocaleString()}
+              {(product.price + 20_000).toLocaleString()}
             </del>
           )}
           <span className="flex-center gap-1 text-[18px] font-bold">

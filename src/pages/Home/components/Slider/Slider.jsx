@@ -69,7 +69,7 @@ const Slider = ({
       >
         {cardShape === "square"
           ? products.map((product) => (
-              <SwiperSlide key={product.id} className="w-60! p-2 sm:w-64!">
+              <SwiperSlide key={product.id} className="w-65! p-2 sm:w-64!">
                 <ProductCardSquare
                   product={product}
                   sliderLabel={sliderLabel}

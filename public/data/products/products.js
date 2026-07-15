@@ -12,7 +12,7 @@ const products = {
       title: "قهوه ترک",
       desc: "(قهوه تلخ ترکی)",
       imgSrc: "/images/pictures/products/coffee-cup.webp",
-      price: 30_000,
+      price: 130_000,
     },
     {
       id: 203,

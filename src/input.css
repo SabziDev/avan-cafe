@@ -9,7 +9,7 @@
   --color-caramel: #bc8767;
   --color-cimarron: #89b6d1;
 
-  --font-Vazir: "Vazir", Arial, Helvetica, sans-serif;
+  --font-Vazir: "Vazir-Medium", Arial, Helvetica, sans-serif;
 }
 /* ============================================= -- Theme Configuration -- ============================================= */
 
@@ -63,12 +63,12 @@
   }
 
   @font-face {
-    font-family: "Vazir";
+    font-family: "Vazir-Medium";
     font-display: swap;
 
     src:
-      local("Vazir"),
-      url("/fonts/Vazir/Medium.woff2") format("woff2");
+      local("Vazir-Medium-FD-WOL"),
+      url("/fonts/Vazir/Vazir-Medium-FD-WOL.woff2") format("woff2");
   }
 }
 @utility container {
