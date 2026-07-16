@@ -1,5 +1,10 @@
 @import "tailwindcss";
 @custom-variant hover (&:hover);
+@custom-variant firefox {
+  @supports (-moz-appearance: none) {
+    @slot;
+  }
+}
 
 /* ============================================= -- Theme Configuration -- ============================================= */
 @theme {
@@ -83,6 +88,7 @@
 @utility rtl {
   direction: rtl;
 }
+
 /*? ============================================= -- Custom Utilities -- ============================================= */
 
 /** ============================================= -- Custom Components -- ============================================= */

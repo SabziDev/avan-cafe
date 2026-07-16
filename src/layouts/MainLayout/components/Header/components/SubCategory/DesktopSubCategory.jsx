@@ -1,7 +1,7 @@
 import DesktopSubCategoryItem from "./DesktopSubCategoryItem";
 
 const DesktopSubCategory = ({ subCategoryItems }) => (
-  <ul className="flex-start h-80 min-w-50 flex-col flex-wrap gap-x-2 gap-y-6 bg-white px-4 pt-7 text-sm">
+  <ul className="flex-start h-80 min-w-50 flex-col flex-wrap gap-x-2 gap-y-6 bg-white px-4 pt-7 text-sm firefox:min-w-195">
     {subCategoryItems.map((subCategoryItem) => (
       <DesktopSubCategoryItem
         key={subCategoryItem.id}

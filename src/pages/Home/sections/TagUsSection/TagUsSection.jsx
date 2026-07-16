@@ -41,9 +41,9 @@ const TagUsSection = () => {
           <span>#تابستون</span>
           <span>#همه_با_هم</span>
           <span>#cafe_avan</span>
-          <span>#coffee-time</span>
+          <span>#coffee_time</span>
           <span>#شکلاتی</span>
-          <span>#شکلاتی</span>
+          <span>#خوش_مزه</span>
         </div>
 
         <img
