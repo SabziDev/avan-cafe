@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-duplicate-if-branches */
 /* eslint-disable unicorn/consistent-function-scoping */
 
 import {

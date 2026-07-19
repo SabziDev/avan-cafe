@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-unreadable-for-of-expression */
 /* eslint-disable unicorn/consistent-function-scoping */
 
 const mergeExports = {
