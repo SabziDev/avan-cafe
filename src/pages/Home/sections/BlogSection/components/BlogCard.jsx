@@ -1,7 +1,7 @@
 import Btn from "@/components/Btn/Btn";
 import Img from "@/components/Img/Img";
 
-const BlogCard = ({ cardVariant = "vertical", data }) => {
+const BlogCard = ({ data, cardVariant = "vertical" }) => {
   return cardVariant === "vertical" ? (
     <article className="flex-items-center h-100 w-70 flex-col justify-between rounded-3xl p-4 shadow-[0_0_6px_rgba(0,0,0,0.1)] md:w-85">
       <div className="flex-center flex-col">

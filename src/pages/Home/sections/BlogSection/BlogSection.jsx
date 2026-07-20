@@ -18,8 +18,8 @@ const BlogSection = () => {
           {blog.slice(2, 4).map((blogItem) => (
             <BlogCard
               key={blogItem.id}
-              cardVariant="horizontal"
               data={blogItem}
+              cardVariant="horizontal"
             />
           ))}
         </div>
