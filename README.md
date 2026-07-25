@@ -3,11 +3,15 @@
 A beautiful web landing-page built with React and JavaScript with a
 clean and responsive user interface.
 
-------------------------------------------------------------------------
+<br />
+
+---
+
+<br />
 
 ## 👀 Preview
 
-![Avan Cafe](./docs/images/screenshot.png)
+![Avan Cafe](./docs/images/screenshot.webp)
 
 🔗 Repository: [GITHUB](https://github.com/SabziDev/visionui-dashboard)
 <br />
