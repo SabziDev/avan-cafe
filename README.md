@@ -82,9 +82,10 @@ pnpm dev
 
 | Package | Description |
 | :--- | :--- |
-| Tailwind | CSS framework |
-| React | UI library for building component-based interfaces |
+| Tailwind | --- |
+| React | --- |
 | Swiper | For slider |
+| Framer-motion | For parallax effect |
 
 ------------------------------------------------------------------------
 
