@@ -7,7 +7,7 @@ clean and responsive user interface.
 
 ## Preview
 
-![Avan Cafe](./screenshot.png)
+![Avan Cafe](./docs/images/screenshot.png)
 
 🔗 Repository: [GITHUB](https://github.com/SabziDev/visionui-dashboard)
 <br />
