@@ -1,11 +1,11 @@
-# Landing Page - Avan Cafe
+# 🎯 Landing Page - Avan Cafe
 
 A beautiful web landing-page built with React and JavaScript with a
 clean and responsive user interface.
 
 ------------------------------------------------------------------------
 
-## Preview
+## 👀 Preview
 
 ![Avan Cafe](./docs/images/screenshot.png)
 
@@ -15,7 +15,7 @@ clean and responsive user interface.
 
 ------------------------------------------------------------------------
 
-## Features
+## ✨ Features
 
 -   Product Slider
 -   Custom Tailwind components
@@ -23,14 +23,14 @@ clean and responsive user interface.
 
 ------------------------------------------------------------------------
 
-## Technologies
+## ⚙️ Technologies
 
 -   Tailwind
 -   React
 
 ------------------------------------------------------------------------
 
-## Project Structure
+## 📂 Project Structure
 
 ``` text
 src/
@@ -44,7 +44,7 @@ src/
 
 ------------------------------------------------------------------------
 
-## Installation
+## 🚀 Installation
 
 Clone the repository:
 
@@ -72,18 +72,20 @@ pnpm dev
 
 ------------------------------------------------------------------------
 
-## Dependencies
+## 📦 Dependencies
 
-  Package        Description
-  -------------- -----------------
-  PACKAGE NAME   PACKAGE PURPOSE
+| Package | Description |
+| :--- | :--- |
+| Tailwind | CSS framework |
+| React | UI library for building component-based interfaces |
+| Swiper | For slider |
 
 ------------------------------------------------------------------------
 
-## Developer
+## 👨‍💻 Developer
 
 Created by **ABOLFAZL SABZMOHAMMADI**
 
-GitHub: [MY GITHUB PROFILE](https://github.com/SabziDev)
+GitHub: [github.com/SabziDev](https://github.com/SabziDev)
 <br />
-Website: [MY GITHUB PROFILE](https://SabziDev.com)
+Website: [SabziDev.com](https://SabziDev.com)
