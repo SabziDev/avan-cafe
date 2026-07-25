@@ -12,11 +12,11 @@ clean and responsive user interface.
 
 <div align="center">
   <span>
-    Repo: 
+    🔗 Repo: 
     <a href="https://github.com/SabziDev/avan-cafe">LINK</a>
   </span>
   <span>
-    Demo: 
+    🔗 Demo: 
     <a href="https://sabzidev-avancafe.vercel.app">LINK</a>
   </span>
 </div>
