@@ -1,21 +1,23 @@
 # 🎯 Landing Page - Avan Cafe
-
 A beautiful web landing-page built with React and JavaScript with a
 clean and responsive user interface.
 
-<br />
-
----
-
-<br />
+------------------------------------------------------------------------
 
 ## 👀 Preview
 
 ![Avan Cafe](./docs/images/screenshot.webp)
 
-🔗 Repository: [GITHUB](https://github.com/SabziDev/visionui-dashboard)
-<br />
-🔗 Live Demo: [LIVE DEMO](https://sabzidev-avancafe.vercel.app)
+<div align="center">
+  <span>
+    Repository: 
+    <a href="https://github.com/SabziDev/avan-cafe">GITHUB</a>
+  </span>
+  <span>
+    Live Demo: 
+    <a href="https://sabzidev-avancafe.vercel.app">DEMO</a>
+  </span>
+</div>
 
 ------------------------------------------------------------------------
 
