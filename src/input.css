@@ -41,17 +41,17 @@
   *:not(html) ::-webkit-scrollbar-thumb {
     @apply bg-primary rounded-full;
   }
-  html::-webkit-scrollbar-corner {
-    @apply bg-transparent;
-  }
-  *:not(html) ::-webkit-scrollbar-corner {
-    @apply bg-transparent;
-  }
   *:not(html) ::-webkit-scrollbar-thumb:hover {
     @apply bg-primary/80;
   }
   html::-webkit-scrollbar-thumb:hover {
     @apply bg-secondary/80;
+  }
+  html::-webkit-scrollbar-corner {
+    @apply bg-transparent;
+  }
+  *:not(html) ::-webkit-scrollbar-corner {
+    @apply bg-transparent;
   }
 
   input,
