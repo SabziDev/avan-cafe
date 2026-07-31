@@ -17,36 +17,46 @@
   --font-Vazir: "Vazir-Medium", Arial, Helvetica, sans-serif;
 }
 /* ============================================= -- Theme Configuration -- ============================================= */
-
+/* * {
+  scrollbar-width: thin;
+  scrollbar-color: red blue;
+} */
 /*! ============================================= -- Base Customization -- ============================================= */
 @layer base {
+  :root {
+    interpolate-size: allow-keywords;
+  }
   html {
-    @apply scroll-smooth selection:bg-caramel selection:text-primary;
+    @apply scroll-smooth firefox:scrollbar-thumb-secondary selection:bg-caramel selection:text-primary;
+  }
+  *:not(html) {
+    @apply firefox:scrollbar-thin firefox:scrollbar-thumb-primary;
   }
   html::-webkit-scrollbar {
     @apply size-2.5;
   }
-  html::-webkit-scrollbar-thumb {
-    @apply bg-secondary;
-  }
-  html::-webkit-scrollbar-thumb:hover {
-    @apply bg-secondary/80;
-  }
-  html::-webkit-scrollbar-corner {
-    @apply bg-transparent;
-  }
   *:not(html) ::-webkit-scrollbar {
     @apply size-1.5;
+  }
+  html::-webkit-scrollbar-thumb {
+    @apply bg-secondary;
   }
   *:not(html) ::-webkit-scrollbar-thumb {
     @apply bg-primary rounded-full;
   }
-  *:not(html) ::-webkit-scrollbar-thumb:hover {
-    @apply bg-primary/80;
+  html::-webkit-scrollbar-corner {
+    @apply bg-transparent;
   }
   *:not(html) ::-webkit-scrollbar-corner {
     @apply bg-transparent;
   }
+  *:not(html) ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/80;
+  }
+  html::-webkit-scrollbar-thumb:hover {
+    @apply bg-secondary/80;
+  }
+  
 
   input,
   textarea {
