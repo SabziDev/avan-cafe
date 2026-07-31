@@ -21,10 +21,10 @@
 /*! ============================================= -- Base Customization -- ============================================= */
 @layer base {
   :root {
-    interpolate-size: allow-keywords;
+    @apply scroll-smooth [interpolate-size:allow-keywords];
   }
   html {
-    @apply scroll-smooth firefox:scrollbar-thumb-secondary selection:bg-caramel selection:text-primary;
+    @apply selection:bg-caramel selection:text-primary firefox:scrollbar-thumb-secondary;
   }
   *:not(html) {
     @apply firefox:scrollbar-thin firefox:scrollbar-thumb-primary;
@@ -73,7 +73,7 @@
 
   button:not(:disabled),
   [role="button"]:not(:disabled) {
-    cursor: pointer;
+    @apply cursor-pointer;
   }
 
   @font-face {
