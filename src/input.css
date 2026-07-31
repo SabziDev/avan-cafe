@@ -56,7 +56,7 @@
 
   input,
   textarea {
-    @apply outline-0! transition-shadow focus:ring-2 focus:ring-primary/20;
+    @apply outline-0! placeholder:text-gray-400 transition-shadow focus:ring-2 focus:ring-primary/20;
   }
   input:-webkit-autofill {
     @apply [transition-property:color,background-color] duration-9999999;
