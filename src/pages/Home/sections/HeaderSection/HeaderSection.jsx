@@ -13,7 +13,7 @@ const HeaderSection = () => (
       backgroundSize: "20px 20px",
     }}
   >
-    <div className="absolute inset-x-0 mx-auto max-h-132.5 max-w-157.5 overflow-hidden bg-secondary/50 px-4 2xl:-left-160">
+    <div className="absolute inset-x-0 mx-auto max-h-132.5 max-w-157.5 overflow-hidden bg-secondary/50 px-4 select-none 2xl:-left-160">
       <img
         src="/images/shapes/pages/home/header-section/hero.webp"
         alt="shape"

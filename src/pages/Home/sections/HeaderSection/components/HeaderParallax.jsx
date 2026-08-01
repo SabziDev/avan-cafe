@@ -67,7 +67,7 @@ const HeaderParallax = () => {
   return (
     <>
       <motion.div
-        className="absolute top-30 left-5 h-35 w-45 min-[480px]:top-40 min-[540px]:top-45 min-[540px]:h-50 min-[540px]:w-60 sm:top-55 sm:left-5 sm:h-60 sm:w-70 md:top-52 md:left-15 md:size-auto lg:top-50 lg:left-45 2xl:top-44 2xl:left-10"
+        className="absolute top-30 left-5 h-35 w-45 select-none min-[480px]:top-40 min-[540px]:top-45 min-[540px]:h-50 min-[540px]:w-60 sm:top-55 sm:left-5 sm:h-60 sm:w-70 md:top-52 md:left-15 md:size-auto lg:top-50 lg:left-45 2xl:top-44 2xl:left-10"
         style={mainParallax}
       >
         <img
@@ -79,7 +79,7 @@ const HeaderParallax = () => {
       {windowSize.isLargeScreen && (
         <>
           <motion.div
-            className="absolute top-55 -left-10"
+            className="absolute top-55 -left-10 select-none"
             style={coffeeParallax}
           >
             <img
@@ -89,7 +89,7 @@ const HeaderParallax = () => {
           </motion.div>
 
           <motion.div
-            className="absolute top-15 left-200 2xl:left-145"
+            className="absolute top-15 left-200 select-none 2xl:left-145"
             style={coffeeParallax}
           >
             <img
@@ -99,7 +99,7 @@ const HeaderParallax = () => {
           </motion.div>
 
           <motion.div
-            className="absolute top-85 left-160 2xl:left-100"
+            className="absolute top-85 left-160 select-none 2xl:left-100"
             style={coffeeParallax}
           >
             <img
