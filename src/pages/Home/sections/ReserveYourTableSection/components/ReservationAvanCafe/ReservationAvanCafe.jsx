@@ -1,6 +1,6 @@
 const ReservationAvanCafe = () => {
   return (
-    <div className="flex-center h-106 flex-col rounded-2xl bg-white px-5 py-4 shadow-2xl">
+    <div className="flex-center h-106 flex-col rounded-2xl bg-white px-5 py-4 shadow-[0_0_6px_rgba(0,0,0,0.1)]">
       <img
         src="/images/pictures/pages/home/reserve-your-table-section/reservation-avan-cafe.webp"
         alt="map"

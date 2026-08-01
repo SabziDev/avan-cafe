@@ -1,5 +1,5 @@
-import "swiper/css";
 import { useId } from "react";
+import "swiper/css";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -69,7 +69,7 @@ const Slider = ({
       >
         {cardShape === "square"
           ? products.map((product) => (
-              <SwiperSlide key={product.id} className="w-65! p-2 sm:w-64!">
+              <SwiperSlide key={product.id} className="w-65! p-2">
                 <ProductCardSquare
                   product={product}
                   sliderLabel={sliderLabel}

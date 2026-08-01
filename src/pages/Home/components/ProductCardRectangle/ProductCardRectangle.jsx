@@ -26,13 +26,16 @@ const ProductCardRectangle = ({ product }) => {
           />
         </div>
 
-        <div className="mr-20 flex-center flex-col-reverse gap-2 sm:flex-row">
+        <button
+          type="button"
+          className="mr-20 flex-center flex-col-reverse gap-2 sm:flex-row"
+        >
           <Btn svgId="basket">سفارش بده</Btn>
           <div className="flex-center flex-col">
             <b>{product.price.toLocaleString()}</b>
             <Icon id="toman" className="size-5 text-caramel" />
           </div>
-        </div>
+        </button>
       </div>
     </article>
   );
