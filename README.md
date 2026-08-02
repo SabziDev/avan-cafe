@@ -84,10 +84,10 @@ pnpm dev
 
 | Package | Description |
 | :--- | :--- |
-| react | Core UI library |
-| swiper | Product slider |
-| framer-motion | Parallax effect |
+| react    | Core UI library |
 | tailwind | CSS framework |
+| swiper   | Product slider |
+| motion   | Parallax effect |
 
 ------------------------------------------------------------------------
 

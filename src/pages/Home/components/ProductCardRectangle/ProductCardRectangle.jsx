@@ -26,7 +26,7 @@ const ProductCardRectangle = ({ product }) => {
           />
         </div>
 
-        <button
+        <div
           type="button"
           className="mr-20 flex-center flex-col-reverse gap-2 sm:flex-row"
         >
@@ -35,7 +35,7 @@ const ProductCardRectangle = ({ product }) => {
             <b>{product.price.toLocaleString()}</b>
             <Icon id="toman" className="size-5 text-caramel" />
           </div>
-        </button>
+        </div>
       </div>
     </article>
   );
