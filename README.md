@@ -33,8 +33,8 @@ clean and responsive user interface.
 
 ## ⚙️ Technologies
 
--   Tailwind
 -   React
+-   Tailwind
 
 ------------------------------------------------------------------------
 
