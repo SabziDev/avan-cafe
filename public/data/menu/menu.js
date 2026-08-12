@@ -35,6 +35,7 @@ const menu = [
           { id: 10_124, title: "قهوه ویتنامی" },
           { id: 10_125, title: "قهوه عربی" },
         ],
+        targetLink: "drinks-section",
       },
       {
         id: 102,
@@ -52,6 +53,7 @@ const menu = [
           { id: 10_209, title: "بستنی قیفی" },
           { id: 10_210, title: "بستنی کاسه‌ای" },
         ],
+        targetLink: "desserts-section",
       },
       {
         id: 103,
@@ -70,6 +72,7 @@ const menu = [
           { id: 10_310, title: "آب هفت میوه طبیعی" },
           { id: 10_311, title: "آب آلبالو طبیعی" },
         ],
+        targetLink: "desserts-section",
       },
       {
         id: 104,
@@ -83,6 +86,7 @@ const menu = [
           { id: 10_405, title: "آیس پک وانیل" },
           { id: 10_406, title: "آیس پک توت فرنگی" },
         ],
+        targetLink: "desserts-section",
       },
       {
         id: 105,
@@ -98,6 +102,7 @@ const menu = [
           { id: 10_507, title: "سوخاری 7 تکه نرمال" },
           { id: 10_508, title: "سوخاری 8 تکه نرمال" },
         ],
+        targetLink: "fast-food-section",
       },
       {
         id: 106,
@@ -114,6 +119,7 @@ const menu = [
           { id: 10_608, title: "ساندویچ کالباس" },
           { id: 10_609, title: "ساندویچ مرغ" },
         ],
+        targetLink: "fast-food-section",
       },
     ],
   },

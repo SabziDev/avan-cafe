@@ -20,7 +20,7 @@ const RootLayout = () => {
         {isPage404 ? (
           outlet
         ) : (
-          <div className="container *:not-first:mt-25">{outlet}</div>
+          <div className="container *:pt-4 *:not-first:mt-20">{outlet}</div>
         )}
       </main>
 

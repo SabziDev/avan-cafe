@@ -3,9 +3,9 @@ import products from "@public/data/products/products";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import Slider from "../../components/Slider/Slider";
 
-const DessertSection = () => {
+const DessertsSection = () => {
   return (
-    <section>
+    <section id="desserts-section">
       <SectionTitle>دسر ها</SectionTitle>
 
       <Slider
@@ -16,4 +16,4 @@ const DessertSection = () => {
   );
 };
 
-export default DessertSection;
+export default DessertsSection;

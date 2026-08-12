@@ -5,7 +5,7 @@ import Slider from "../../components/Slider/Slider";
 
 const FastFood = () => {
   return (
-    <section>
+    <section id="fast-food-section">
       <SectionTitle isShowLink>فست فود</SectionTitle>
 
       <Slider

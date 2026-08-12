@@ -3,8 +3,8 @@ import pagesMeta from "@public/data/pages-meta/pages-meta";
 import Head from "../components/Head";
 import BaristaSuggestionSection from "./sections/BaristaSuggestionSection/BaristaSuggestionSection";
 import BlogSection from "./sections/BlogSection/BlogSection";
-import DessertSection from "./sections/DessertSection/DessertSection";
-import DrinkProductsSection from "./sections/DrinkProductsSection/DrinkProductsSection";
+import DessertsSection from "./sections/DessertsSection/DessertsSection";
+import DrinksSection from "./sections/DrinksSection/DrinksSection";
 import FastFoodSection from "./sections/FastFoodSection/FastFoodSection";
 import HeaderSection from "./sections/HeaderSection/HeaderSection";
 import ProductsTypesSection from "./sections/ProductsTypesSection/ProductsTypesSection";
@@ -23,14 +23,14 @@ const Home = () => {
 
       <HeaderSection />
       <ProductsTypesSection />
-      <DrinkProductsSection />
+      <DrinksSection />
       <WhyAvanSection />
       <ReserveYourTableSection />
       <BaristaSuggestionSection />
       <FastFoodSection />
       <TodayDiscountSection />
       <TagUsSection />
-      <DessertSection />
+      <DessertsSection />
       <BlogSection />
     </>
   );
