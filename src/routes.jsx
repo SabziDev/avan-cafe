@@ -25,7 +25,6 @@ const router = createBrowserRouter([
         path: "*",
         element: <NotFound />,
         handle: {
-          isPage404: true,
           isHideLayout: true,
         },
       },

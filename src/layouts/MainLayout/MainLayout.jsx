@@ -8,22 +8,21 @@ import Header from "./components/Header/Header";
 const RootLayout = () => {
   const outlet = useOutlet();
 
-  const { isPage404, isHideLayout } = useCurrentPageStatus();
+  const { isHideLayout } = useCurrentPageStatus();
 
   return (
     <>
       <LayoutBase />
 
       {!isHideLayout && <Header />}
-
       <main id="main-root" className="mb-40 overflow-hidden">
-        {isPage404 ? (
-          outlet
-        ) : (
-          <div className="container *:pt-4 *:not-first:mt-20">{outlet}</div>
-        )}
+        <div
+          id="main-root__container"
+          className="container *:pt-4 *:not-first:mt-20"
+        >
+          {outlet}
+        </div>
       </main>
-
       {!isHideLayout && <Footer />}
     </>
   );
