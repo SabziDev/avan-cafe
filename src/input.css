@@ -20,6 +20,7 @@
 
 /*! ============================================= -- Base Customization -- ============================================= */
 @layer base {
+  /* Base Styles */
   :root {
     @apply scroll-smooth [interpolate-size:allow-keywords];
   }
