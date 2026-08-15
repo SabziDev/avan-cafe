@@ -15,6 +15,7 @@ const RootLayout = () => {
       <LayoutBase />
 
       {!isHideLayout && <Header />}
+
       <main id="main-root" className="mb-40 overflow-hidden">
         <div
           id="main-root__container"
@@ -23,6 +24,7 @@ const RootLayout = () => {
           {outlet}
         </div>
       </main>
+
       {!isHideLayout && <Footer />}
     </>
   );
