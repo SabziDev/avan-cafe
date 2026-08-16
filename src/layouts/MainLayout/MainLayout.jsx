@@ -19,7 +19,7 @@ const RootLayout = () => {
       <main id="main-root" className="mb-40 overflow-hidden">
         <div
           id="main-root__container"
-          className="container *:pt-4 *:not-first:mt-20"
+          className="container *:not-first:mt-20 *:not-first:pt-6"
         >
           {outlet}
         </div>
