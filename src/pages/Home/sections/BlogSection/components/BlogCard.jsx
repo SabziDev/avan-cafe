@@ -9,7 +9,7 @@ const BlogCard = ({ data, cardVariant = "vertical" }) => {
           src={data.imgSrc}
           alt="blog-card"
           loading="lazy"
-          className="h-45 w-65 md:w-70"
+          className="h-45 w-65 rounded-2xl md:w-70"
         />
         <h3 className="mt-2 text-xl font-bold">{data.title}</h3>
         <p className="mt-2 text-lg text-primary/50">{data.desc}</p>
@@ -17,7 +17,7 @@ const BlogCard = ({ data, cardVariant = "vertical" }) => {
 
       <div className="flex-items-center w-full justify-between">
         <div className="flex-center gap-2">
-          <Img src={data.authorImgSrc} className="size-8" />
+          <Img src={data.authorImgSrc} className="size-8 rounded-full" />
           <span className="text-primary/50">{data.author}</span>
         </div>
         <Btn svgId="arrow-medium">مطالعه</Btn>
@@ -29,7 +29,7 @@ const BlogCard = ({ data, cardVariant = "vertical" }) => {
         src={data.imgSrc}
         alt="blog-card"
         loading="lazy"
-        className="h-35 w-80"
+        className="h-35 w-80 rounded-2xl"
       />
 
       <div className="flex-center flex-col gap-6">
@@ -40,7 +40,7 @@ const BlogCard = ({ data, cardVariant = "vertical" }) => {
 
         <div className="flex-items-center w-full justify-between">
           <div className="flex-center gap-2">
-            <Img src={data.authorImgSrc} className="size-8" />
+            <Img src={data.authorImgSrc} className="size-8 rounded-2xl" />
             <span className="text-primary/50">{data.author}</span>
           </div>
           <Btn svgId="arrow-medium">مطالعه</Btn>

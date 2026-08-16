@@ -15,7 +15,7 @@ const ProductCardRectangle = ({ product }) => {
         src={product.imgSrc}
         alt={product.title}
         loading="lazy"
-        className="z-2 h-20 w-30"
+        className="z-2 h-20 w-30 rounded-2xl"
       />
       <div className="flex-justify-center w-full flex-col items-start gap-6">
         <div className="flex-items-center w-full justify-between">
