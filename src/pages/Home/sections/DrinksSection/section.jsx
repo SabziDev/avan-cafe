@@ -1,4 +1,4 @@
-import products from "@public/data/products/products";
+import products from "@/data/products/products";
 
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import Slider from "../../components/Slider/Slider";

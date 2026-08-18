@@ -1,4 +1,4 @@
-import pagesMeta from "@public/data/pages-meta/pages-meta";
+import pagesMeta from "@/data/pages-meta/pages-meta";
 
 import Head from "../components/Head";
 import BaristaSuggestionSection from "./sections/BaristaSuggestionSection/section";

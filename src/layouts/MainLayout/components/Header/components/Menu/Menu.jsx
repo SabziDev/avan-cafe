@@ -1,8 +1,8 @@
-import menuItems from "@public/data/menu/menu.js";
 import clsx from "clsx";
 import { Link } from "react-router";
 
 import Icon from "@/components/Icon/Icon";
+import menu from "@/data/menu/menu";
 
 import DesktopMenuItem from "./DesktopMenuItem";
 import MobileMenuItem from "./MobileMenuItem";
@@ -11,7 +11,7 @@ const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
   return (
     <>
       <ul className="hidden w-full gap-5 lg:flex-center xl:gap-10">
-        {menuItems.map((menuItem) => (
+        {menu.map((menuItem) => (
           <DesktopMenuItem key={menuItem.id} menuItem={menuItem} />
         ))}
       </ul>

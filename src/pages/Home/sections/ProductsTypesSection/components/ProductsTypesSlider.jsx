@@ -1,6 +1,7 @@
-import menuItems from "@public/data/menu/menu.js";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import menu from "@/data/menu/menu";
 
 import ProductsTypesSliderItem from "./ProductsTypesSliderItem";
 
@@ -23,7 +24,7 @@ const ProductsTypesSlider = () => {
         },
       }}
     >
-      {menuItems[0].subMenu.map((sliderItem) => (
+      {menu[0].subMenu.map((sliderItem) => (
         <SwiperSlide key={sliderItem.id} className="mx-auto! flex-center!">
           <ProductsTypesSliderItem {...sliderItem} />
         </SwiperSlide>

@@ -1,5 +1,6 @@
-import pagesMeta from "@public/data/pages-meta/pages-meta";
 import { Link } from "react-router";
+
+import pagesMeta from "@/data/pages-meta/pages-meta";
 
 import Head from "../components/Head";
 

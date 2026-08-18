@@ -1,6 +1,5 @@
-import users from "@public/data/users/users";
-
 import Btn from "@/components/Btn/Btn";
+import users from "@/data/users/users";
 
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import CircleSlider from "./components/CircleSlider/CircleSlider";
