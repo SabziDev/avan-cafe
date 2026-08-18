@@ -1,6 +1,6 @@
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
-import AvanInfo from "./AvanInfo/AvanInfo";
-import Video from "./Video/Video";
+import AvanInfo from "./components/AvanInfo/AvanInfo";
+import Video from "./components/Video/Video";
 
 const WhyAvanSection = () => {
   return (

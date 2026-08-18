@@ -1,17 +1,17 @@
 import pagesMeta from "@public/data/pages-meta/pages-meta";
 
 import Head from "../components/Head";
-import BaristaSuggestionSection from "./sections/BaristaSuggestionSection/BaristaSuggestionSection";
-import BlogSection from "./sections/BlogSection/BlogSection";
-import DessertsSection from "./sections/DessertsSection/DessertsSection";
-import DrinksSection from "./sections/DrinksSection/DrinksSection";
-import FastFoodSection from "./sections/FastFoodSection/FastFoodSection";
-import HeaderSection from "./sections/HeaderSection/HeaderSection";
-import ProductsTypesSection from "./sections/ProductsTypesSection/ProductsTypesSection";
-import ReserveYourTableSection from "./sections/ReserveYourTableSection/ReserveYourTableSection";
-import TagUsSection from "./sections/TagUsSection/TagUsSection";
-import TodayDiscountSection from "./sections/TodayDiscountSection/TodayDiscountSection";
-import WhyAvanSection from "./sections/WhyAvanSection/WhyAvanSection";
+import BaristaSuggestionSection from "./sections/BaristaSuggestionSection/section";
+import BlogSection from "./sections/BlogSection/section";
+import DessertsSection from "./sections/DessertsSection/section";
+import DrinksSection from "./sections/DrinksSection/section";
+import FastFoodSection from "./sections/FastFoodSection/section";
+import HeaderSection from "./sections/HeaderSection/section";
+import ProductsTypesSection from "./sections/ProductsTypesSection/section";
+import ReserveYourTableSection from "./sections/ReserveYourTableSection/section";
+import TagUsSection from "./sections/TagUsSection/section";
+import TodayDiscountSection from "./sections/TodayDiscountSection/section";
+import WhyAvanSection from "./sections/WhyAvanSection/section";
 
 const Home = () => {
   return (
