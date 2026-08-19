@@ -2,12 +2,13 @@ import clsx from "clsx";
 import { Link } from "react-router";
 
 import Icon from "@/components/Icon/Icon";
+import Overlay from "@/components/Overlay/Overlay";
 import menu from "@/data/menu/menu";
 
 import DesktopMenuItem from "./DesktopMenuItem";
 import MobileMenuItem from "./MobileMenuItem";
 
-const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
+const Menu = ({ isMobileMenuOpen, toggleMobileMenu }) => {
   return (
     <>
       <ul className="hidden w-full gap-5 lg:flex-center xl:gap-10">
@@ -16,19 +17,16 @@ const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
         ))}
       </ul>
 
-      <div
-        onClick={toggleOpenMobileMenu}
-        className={clsx([
-          "fixed inset-0 z-199 h-screen bg-black/50 transition-opacity duration-300 lg:hidden",
-          isOpenMobileMenu
-            ? "pointer-events-auto opacity-100"
-            : "pointer-events-none opacity-0",
-        ])}
+      {/* Sidebar on Mobile-size */}
+      <Overlay
+        isShow={isMobileMenuOpen}
+        onClose={toggleMobileMenu}
+        className="lg:hidden"
       />
       <div
         className={clsx([
-          "fixed inset-y-0 right-0 z-200 flex h-screen w-[80%] flex-col justify-between overflow-y-auto bg-white px-6 pt-4 pb-30 transition-opacity duration-300 lg:hidden",
-          isOpenMobileMenu
+          "fixed inset-y-0 right-0 z-200 flex h-screen w-[80%] flex-col justify-between overflow-y-auto bg-white px-6 pt-4 pb-30 transition-opacity duration-250 lg:hidden",
+          isMobileMenuOpen
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none opacity-0",
         ])}
@@ -44,7 +42,7 @@ const Menu = ({ isOpenMobileMenu, toggleOpenMobileMenu }) => {
             </div>
           </Link>
           <ul className="flex-justify-center w-full flex-col items-start gap-6">
-            {menuItems.map((menuItem) => (
+            {menu.map((menuItem) => (
               <MobileMenuItem key={menuItem.id} menuItem={menuItem} />
             ))}
           </ul>

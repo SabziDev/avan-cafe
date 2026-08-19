@@ -1,15 +1,15 @@
 import { Link } from "react-router";
 
+import Divider from "@/components/Divider/Divider";
 import Icon from "@/components/Icon/Icon";
 import useToggle from "@/hooks/useToggle";
 
-import Divider from "../../../../components/Divider/Divider";
 import Basket from "./components/Basket/Basket";
 import Login from "./components/Login/Login";
 import Menu from "./components/Menu/Menu";
 
 const Header = () => {
-  const [isOpenMobileMenu, toggleOpenMobileMenu] = useToggle(false);
+  const [isMobileMenuOpen, toggleMobileMenu] = useToggle(false);
 
   return (
     <header className="mt-4">
@@ -26,8 +26,8 @@ const Header = () => {
               </div>
             </Link>
             <Menu
-              isOpenMobileMenu={isOpenMobileMenu}
-              toggleOpenMobileMenu={toggleOpenMobileMenu}
+              isMobileMenuOpen={isMobileMenuOpen}
+              toggleMobileMenu={toggleMobileMenu}
             />
           </div>
           <div className="flex-center gap-2.5">
@@ -37,7 +37,7 @@ const Header = () => {
             </span>
             <Login />
             <div
-              onClick={toggleOpenMobileMenu}
+              onClick={toggleMobileMenu}
               className="cursor-pointer rounded-full bg-secondary p-2 lg:hidden"
             >
               <Icon id="four-squares-icon" className="size-6" />
