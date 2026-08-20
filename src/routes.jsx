@@ -20,15 +20,12 @@ const router = createBrowserRouter([
         path: "home",
         element: <Navigate to="/" replace />,
       },
-
-      {
-        path: "*",
-        element: <NotFound />,
-        handle: {
-          isHideLayout: true,
-        },
-      },
     ],
+  },
+
+  {
+    path: "/*",
+    element: <NotFound />,
   },
 ]);
 
