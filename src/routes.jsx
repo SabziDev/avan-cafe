@@ -1,5 +1,3 @@
-/* eslint-disable custom/sort-object-props */
-
 import { createBrowserRouter, Navigate } from "react-router";
 
 import MainLayout from "./layouts/MainLayout/MainLayout";
