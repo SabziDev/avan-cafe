@@ -5,7 +5,7 @@ const NotFoundBtn = () => {
     // TODO NotFound-Page Btn-Text
     <Link
       to="/"
-      className="shadow-xl hover:shadow-2xl z-10 rounded-lg bg-white/90 p-3 font-medium text-black/60 active:scale-[0.96]"
+      className="z-10 rounded-lg bg-white/90 p-3 font-medium text-black/60 shadow-xl hover:shadow-2xl active:scale-[0.96]"
     >
       بازگشت به صفحه اصلی
       {/* Return Home */}

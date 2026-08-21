@@ -1,4 +1,5 @@
 import Head from "@/layouts/components/Head";
+
 import NotFoundBackgroundPattern from "./components/NotFoundBackgroundPattern/NotFoundBackgroundPattern";
 import NotFoundBtn from "./components/NotFoundBtn/NotFoundBtn";
 import NotFoundCode from "./components/NotFoundCode/NotFoundCode";
