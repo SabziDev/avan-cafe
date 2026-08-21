@@ -15,6 +15,13 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+
+        handle: {
+          pageMeta: {
+            title: "کافه آوان",
+            desc: "آوان به زبان ایتالیایی یعنی سبز؛ یعنی جایی که قهوه با آرامش طبیعت گره میخورد، چون باور داریم یه کافه خوب باید ریشه در آرامش داشته باشد.",
+          },
+        },
       },
       {
         path: "home",
@@ -26,6 +33,13 @@ const router = createBrowserRouter([
   {
     path: "*",
     element: <NotFound />,
+
+    handle: {
+      pageMeta: {
+        title: "صفحه پیدا نشد",
+        desc: "صفحه ای که به دنبال آن هستید وجود ندارد یا منتقل شده است. لطفا آدرس را بررسی کنید یا به صفحه خانه بروید.",
+      },
+    },
   },
 ]);
 

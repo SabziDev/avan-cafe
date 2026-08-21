@@ -1,6 +1,5 @@
-import pagesMeta from "@/data/pages-meta/pages-meta";
+import Head from "@/layouts/components/Head";
 
-import Head from "../components/Head";
 import BaristaSuggestionSection from "./sections/BaristaSuggestionSection/section";
 import BlogSection from "./sections/BlogSection/section";
 import DessertsSection from "./sections/DessertsSection/section";
@@ -16,10 +15,7 @@ import WhyAvanSection from "./sections/WhyAvanSection/section";
 const Home = () => {
   return (
     <>
-      <Head>
-        <title>{pagesMeta.home.title}</title>
-        <meta name="description" content={pagesMeta.home.desc} />
-      </Head>
+      <Head />
 
       <HeaderSection />
       <ProductsTypesSection />
