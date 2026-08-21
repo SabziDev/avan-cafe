@@ -1,6 +1,6 @@
 import { createBrowserRouter, Navigate } from "react-router";
 
-import pagesMeta from "./data/pages-meta/pages-meta";
+import pagesSeo from "./data/pagesSeo/pagesSeo";
 import MainLayout from "./layouts/MainLayout/MainLayout";
 import Home from "./pages/Home/page";
 import NotFound from "./pages/NotFound/page";
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
         handle: {
-          pageMeta: { ...pagesMeta.home },
+          seo: pagesSeo.home,
         },
       },
       {
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     path: "*",
     element: <NotFound />,
     handle: {
-      pageMeta: { ...pagesMeta.notFound },
+      seo: pagesSeo.notFound,
     },
   },
 ]);
