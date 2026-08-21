@@ -84,12 +84,12 @@ pnpm dev
 
 ## 📦 Dependencies
 
-| Package  | Description              |
-| :------- | :----------------------- |
-| react    | Core UI library          |
-| tailwind | CSS framework            |
-| swiper   | Product slider           |
-| motion   | Parallax effect and more |
+| Package  | Description       |
+| :------- | :---------------- |
+| react    | Core UI library   |
+| tailwind | CSS framework     |
+| swiper   | Product slider    |
+| motion   | Animation library |
 
 ---
 
