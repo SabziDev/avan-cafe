@@ -15,7 +15,6 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
-
         handle: {
           pageMeta: {
             title: "کافه آوان",
@@ -33,7 +32,6 @@ const router = createBrowserRouter([
   {
     path: "*",
     element: <NotFound />,
-
     handle: {
       pageMeta: {
         title: "صفحه پیدا نشد",
