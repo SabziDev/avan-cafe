@@ -43,12 +43,13 @@ clean and responsive user interface.
 
 ```text
 src/
+├── data/
 ├── components/
 ├── hooks/
 ├── layouts/
 ├── pages/
-├── routes.jsx
 ├── input.css
+├── routes.jsx
 ```
 
 ---
