@@ -8,12 +8,12 @@ import NotFound from "./pages/NotFound/page";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout />,
+    Component: MainLayout,
 
     children: [
       {
         index: true,
-        element: <Home />,
+        Component: Home,
         handle: {
           seo: pagesSeo.home,
         },
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
 
   {
     path: "*",
-    element: <NotFound />,
+    Component: NotFound,
     handle: {
       seo: pagesSeo.notFound,
     },
