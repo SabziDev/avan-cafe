@@ -59,13 +59,7 @@ src/
 Clone the repository:
 
 ```bash
-git clone https://github.com/SabziDev/avan-cafe.git
-```
-
-Go to the project folder:
-
-```bash
-cd avan-cafe
+git clone https://github.com/SabziDev/avan-cafe.git .
 ```
 
 Install dependencies:
