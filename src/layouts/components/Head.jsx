@@ -1,12 +1,12 @@
 import useCurrentRouteHandle from "../hooks/useCurrentRouteHandle";
 
 const Head = () => {
-  const { title, desc } = useCurrentRouteHandle("seo");
+  const seo = useCurrentRouteHandle("seo");
 
   return (
     <>
-      <title>{title}</title>
-      <meta name="description" content={desc} />
+      <title>{seo?.title}</title>
+      <meta name="description" content={seo?.desc} />
     </>
   );
 };
