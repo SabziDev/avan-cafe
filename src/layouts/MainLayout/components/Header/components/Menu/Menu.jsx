@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 import Icon from "@/components/Icon/Icon";
 import Overlay from "@/components/Overlay/Overlay";
-import menu from "@/data/menu/menu";
+import menu from "@/data/features/menu/menu";
 
 import DesktopMenuItem from "./DesktopMenuItem";
 import MobileMenuItem from "./MobileMenuItem";

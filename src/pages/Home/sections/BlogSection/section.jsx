@@ -1,4 +1,4 @@
-import blog from "@/data/blog/blog";
+import blog from "@/data/features/blog/blog";
 
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import BlogCard from "./components/BlogCard";

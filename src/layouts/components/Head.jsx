@@ -1,7 +1,7 @@
-import useCurrentRouteMeta from "../hooks/useCurrentRouteMeta";
+import useCurrentRouteHandle from "../hooks/useCurrentRouteHandle";
 
 const Head = () => {
-  const { title, desc } = useCurrentRouteMeta("seo");
+  const { title, desc } = useCurrentRouteHandle("seo");
 
   return (
     <>

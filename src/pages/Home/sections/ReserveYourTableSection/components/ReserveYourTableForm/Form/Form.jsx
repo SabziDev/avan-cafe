@@ -1,6 +1,6 @@
 /* eslint-disable unicorn/no-nested-ternary */
 
-import reserveYourTableSectionFormFields from "@/data/form-fields/pages/home/reserve-your-table-section";
+import reserveYourTableSectionFormFields from "@/data/features/form-fields/pages/home/reserve-your-table-section";
 
 import Input from "./components/Input/Input";
 import NumInput from "./components/NumInput/NumInput";
