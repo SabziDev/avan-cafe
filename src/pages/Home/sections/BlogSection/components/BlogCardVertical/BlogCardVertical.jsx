@@ -11,8 +11,8 @@ const BlogCardVertical = ({ data }) => {
           loading="lazy"
           className="h-45 w-65 rounded-2xl md:w-70"
         />
-        <h3 className="mt-2 text-lg font-bold">{data.title}</h3>
-        <p className="mt-2 text-primary/50">{data.desc}</p>
+        <h3 className="mt-2 font-bold">{data.title}</h3>
+        <p className="mt-2 text-center text-primary/50">{data.desc}</p>
       </div>
 
       <div className="flex-items-center w-full justify-between">
