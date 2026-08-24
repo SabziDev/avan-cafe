@@ -1,4 +1,4 @@
-import todayChairProducts from "@/data/products/today-chair-products";
+import todayChairProducts from "@/data/features/products/today-chair-products";
 
 import Slider from "../../components/Slider/Slider";
 import HeaderInput from "./components/HeaderInput";

@@ -1,7 +1,7 @@
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import menu from "@/data/menu/menu";
+import menu from "@/data/features/menu/menu";
 
 import ProductsTypesSliderItem from "./ProductsTypesSliderItem";
 
