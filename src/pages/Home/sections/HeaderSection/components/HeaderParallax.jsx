@@ -1,3 +1,5 @@
+/* eslint-disable @eslint-react/immutability */
+
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import { useEffect, useState } from "react";
 

@@ -74,6 +74,7 @@ const mergeExports = {
 
               defaultExportNode = element;
               defaultExportIndex = i;
+
               break;
             }
 
