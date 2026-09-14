@@ -13,10 +13,10 @@ const HeaderParallax = () => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  // Mobile Device Orientation
   const deviceX = useMotionValue(0);
   const deviceY = useMotionValue(0);
 
+  // Window Size
   useEffect(() => {
     const updateWindowSize = () => {
       const width = window.innerWidth;
@@ -33,10 +33,12 @@ const HeaderParallax = () => {
 
     window.addEventListener("resize", updateWindowSize);
 
-    return () => window.removeEventListener("resize", updateWindowSize);
+    return () => {
+      window.removeEventListener("resize", updateWindowSize);
+    };
   }, []);
 
-  // Desktop Mouse Parallax
+  // Mouse Parallax
   useEffect(() => {
     const handleMouseMove = (e) => {
       mouseX.set(e.clientX);
@@ -45,10 +47,12 @@ const HeaderParallax = () => {
 
     window.addEventListener("mousemove", handleMouseMove);
 
-    return () => window.removeEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
   }, [mouseX, mouseY]);
 
-  // Mobile Device Orientation Parallax
+  // Device Orientation Parallax
   useEffect(() => {
     const handleDeviceOrientation = (e) => {
       const { beta, gamma } = e;
@@ -88,35 +92,35 @@ const HeaderParallax = () => {
     };
   }, [deviceX, deviceY]);
 
-  // Mouse position → percentage
-  const xPercent = useTransform(mouseX, (v) => {
+  // Mouse → Percentage
+  const mouseXPercent = useTransform(mouseX, (value) => {
     if (windowSize.width === 0) return 0;
 
     const centerX = windowSize.width / 2;
 
-    return (v - centerX) / centerX;
+    return (value - centerX) / centerX;
   });
 
-  const yPercent = useTransform(mouseY, (v) => {
+  const mouseYPercent = useTransform(mouseY, (value) => {
     if (windowSize.height === 0) return 0;
 
     const centerY = windowSize.height / 2;
 
-    return (v - centerY) / centerY;
+    return (value - centerY) / centerY;
   });
 
-  // Device orientation → percentage
-  const deviceXPercent = useTransform(deviceX, (v) => v / 45);
+  // Device → Percentage
+  const deviceXPercent = useTransform(deviceX, (value) => value / 45);
 
-  const deviceYPercent = useTransform(deviceY, (v) => v / 45);
+  const deviceYPercent = useTransform(deviceY, (value) => value / 45);
 
   // Smooth Mouse
-  const smoothX = useSpring(xPercent, {
+  const smoothMouseX = useSpring(mouseXPercent, {
     stiffness: 50,
     damping: 15,
   });
 
-  const smoothY = useSpring(yPercent, {
+  const smoothMouseY = useSpring(mouseYPercent, {
     stiffness: 50,
     damping: 15,
   });
@@ -132,18 +136,26 @@ const HeaderParallax = () => {
     damping: 15,
   });
 
+  // Small Screen → Mouse + Device
+  const parallaxX = useTransform(
+    [smoothMouseX, smoothDeviceX],
+    ([mouse, device]) => (windowSize.isLargeScreen ? mouse : mouse + device),
+  );
+
+  const parallaxY = useTransform(
+    [smoothMouseY, smoothDeviceY],
+    ([mouse, device]) => (windowSize.isLargeScreen ? mouse : mouse + device),
+  );
+
   const useParallax = (factor) => ({
-    x: useTransform(
-      windowSize.isLargeScreen ? smoothX : smoothDeviceX,
-      (v) => v * factor,
-    ),
-    y: useTransform(
-      windowSize.isLargeScreen ? smoothY : smoothDeviceY,
-      (v) => v * factor,
-    ),
+    x: useTransform(parallaxX, (value) => value * factor),
+    y: useTransform(parallaxY, (value) => value * factor),
   });
 
-  const mainParallax = useParallax(2);
+  // Large: 2
+  // Small: 20
+  const mainParallax = useParallax(windowSize.isLargeScreen ? 2 : 10);
+
   const coffeeParallax = useParallax(-10);
 
   return (
