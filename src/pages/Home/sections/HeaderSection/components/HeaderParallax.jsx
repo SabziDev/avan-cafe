@@ -3,11 +3,10 @@
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import { useEffect, useState } from "react";
 
-const HeaderParallax = () => {
-  const [windowSize, setWindowSize] = useState({
+const useParallax = (factor, isLargeScreen) => {
+  const [size, setSize] = useState({
     width: 0,
     height: 0,
-    isLargeScreen: false,
   });
 
   const mouseX = useMotionValue(0);
@@ -16,147 +15,110 @@ const HeaderParallax = () => {
   const deviceX = useMotionValue(0);
   const deviceY = useMotionValue(0);
 
-  // Window Size
   useEffect(() => {
-    const updateWindowSize = () => {
-      const width = window.innerWidth;
-      const height = window.innerHeight;
-
-      setWindowSize({
-        width,
-        height,
-        isLargeScreen: width >= 1280,
+    const updateSize = () => {
+      setSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
       });
     };
 
-    updateWindowSize();
-
-    window.addEventListener("resize", updateWindowSize);
-
-    return () => {
-      window.removeEventListener("resize", updateWindowSize);
-    };
-  }, []);
-
-  // Mouse Parallax
-  useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handlePointerMove = (e) => {
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    const handleOrientation = (e) => {
+      if (e.beta === null || e.gamma === null) return;
 
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, [mouseX, mouseY]);
-
-  // Device Orientation Parallax
-  useEffect(() => {
-    const handleDeviceOrientation = (e) => {
-      const { beta, gamma } = e;
-
-      if (beta === null || gamma === null) return;
-
-      deviceX.set(gamma);
-      deviceY.set(beta);
+      deviceX.set(e.gamma / 45);
+      deviceY.set(e.beta / 45);
     };
 
-    const requestOrientationPermission = async () => {
-      if (
-        typeof DeviceOrientationEvent !== "undefined" &&
-        typeof DeviceOrientationEvent.requestPermission === "function"
-      ) {
+    const setupOrientation = async () => {
+      if (isLargeScreen || typeof DeviceOrientationEvent === "undefined") {
+        return;
+      }
+
+      if (typeof DeviceOrientationEvent.requestPermission === "function") {
         try {
           const permission = await DeviceOrientationEvent.requestPermission();
 
-          if (permission === "granted") {
-            window.addEventListener(
-              "deviceorientation",
-              handleDeviceOrientation,
-            );
-          }
+          if (permission !== "granted") return;
         } catch {
-          // Permission denied
+          return;
         }
-      } else {
-        window.addEventListener("deviceorientation", handleDeviceOrientation);
       }
+
+      window.addEventListener("deviceorientation", handleOrientation);
     };
 
-    requestOrientationPermission();
+    updateSize();
+
+    window.addEventListener("resize", updateSize);
+    window.addEventListener("pointermove", handlePointerMove);
+
+    setupOrientation();
 
     return () => {
-      window.removeEventListener("deviceorientation", handleDeviceOrientation);
+      window.removeEventListener("resize", updateSize);
+      window.removeEventListener("pointermove", handlePointerMove);
+      window.removeEventListener("deviceorientation", handleOrientation);
     };
-  }, [deviceX, deviceY]);
+  }, [isLargeScreen, mouseX, mouseY, deviceX, deviceY]);
 
-  // Mouse → Percentage
   const mouseXPercent = useTransform(mouseX, (value) => {
-    if (windowSize.width === 0) return 0;
+    if (!size.width) return 0;
 
-    const centerX = windowSize.width / 2;
-
-    return (value - centerX) / centerX;
+    return (value - size.width / 2) / (size.width / 2);
   });
 
   const mouseYPercent = useTransform(mouseY, (value) => {
-    if (windowSize.height === 0) return 0;
+    if (!size.height) return 0;
 
-    const centerY = windowSize.height / 2;
-
-    return (value - centerY) / centerY;
+    return (value - size.height / 2) / (size.height / 2);
   });
 
-  // Device → Percentage
-  const deviceXPercent = useTransform(deviceX, (value) => value / 45);
-
-  const deviceYPercent = useTransform(deviceY, (value) => value / 45);
-
-  // Smooth Mouse
-  const smoothMouseX = useSpring(mouseXPercent, {
-    stiffness: 50,
-    damping: 15,
-  });
-
-  const smoothMouseY = useSpring(mouseYPercent, {
-    stiffness: 50,
-    damping: 15,
-  });
-
-  // Smooth Device
-  const smoothDeviceX = useSpring(deviceXPercent, {
-    stiffness: 50,
-    damping: 15,
-  });
-
-  const smoothDeviceY = useSpring(deviceYPercent, {
-    stiffness: 50,
-    damping: 15,
-  });
-
-  // Small Screen → Mouse + Device
-  const parallaxX = useTransform(
-    [smoothMouseX, smoothDeviceX],
-    ([mouse, device]) => (windowSize.isLargeScreen ? mouse : mouse + device),
+  const x = useTransform(
+    [mouseXPercent, deviceX],
+    ([mouse, device]) => (mouse + (isLargeScreen ? 0 : device)) * factor,
   );
 
-  const parallaxY = useTransform(
-    [smoothMouseY, smoothDeviceY],
-    ([mouse, device]) => (windowSize.isLargeScreen ? mouse : mouse + device),
+  const y = useTransform(
+    [mouseYPercent, deviceY],
+    ([mouse, device]) => (mouse + (isLargeScreen ? 0 : device)) * factor,
   );
 
-  const useParallax = (factor) => ({
-    x: useTransform(parallaxX, (value) => value * factor),
-    y: useTransform(parallaxY, (value) => value * factor),
-  });
+  return {
+    x: useSpring(x, {
+      stiffness: 50,
+      damping: 15,
+    }),
+    y: useSpring(y, {
+      stiffness: 50,
+      damping: 15,
+    }),
+  };
+};
 
-  // Large: 2
-  // Small: 20
-  const mainParallax = useParallax(windowSize.isLargeScreen ? 2 : 10);
+const HeaderParallax = () => {
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
-  const coffeeParallax = useParallax(-10);
+  useEffect(() => {
+    const updateScreen = () => {
+      setIsLargeScreen(window.innerWidth >= 1280);
+    };
+
+    updateScreen();
+
+    window.addEventListener("resize", updateScreen);
+
+    return () => window.removeEventListener("resize", updateScreen);
+  }, []);
+
+  const mainParallax = useParallax(isLargeScreen ? 2 : 10, isLargeScreen);
+
+  const coffeeParallax = useParallax(-10, isLargeScreen);
 
   return (
     <>
@@ -170,7 +132,7 @@ const HeaderParallax = () => {
         />
       </motion.div>
 
-      {windowSize.isLargeScreen && (
+      {isLargeScreen && (
         <>
           <motion.div
             className="absolute top-55 -left-10 select-none"
