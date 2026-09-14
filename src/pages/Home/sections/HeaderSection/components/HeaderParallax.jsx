@@ -13,10 +13,15 @@ const HeaderParallax = () => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
+  // Mobile Device Orientation
+  const deviceX = useMotionValue(0);
+  const deviceY = useMotionValue(0);
+
   useEffect(() => {
     const updateWindowSize = () => {
       const width = window.innerWidth;
       const height = window.innerHeight;
+
       setWindowSize({
         width,
         height,
@@ -25,11 +30,13 @@ const HeaderParallax = () => {
     };
 
     updateWindowSize();
+
     window.addEventListener("resize", updateWindowSize);
 
     return () => window.removeEventListener("resize", updateWindowSize);
   }, []);
 
+  // Desktop Mouse Parallax
   useEffect(() => {
     const handleMouseMove = (e) => {
       mouseX.set(e.clientX);
@@ -41,8 +48,50 @@ const HeaderParallax = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [mouseX, mouseY]);
 
+  // Mobile Device Orientation Parallax
+  useEffect(() => {
+    const handleDeviceOrientation = (e) => {
+      const { beta, gamma } = e;
+
+      if (beta === null || gamma === null) return;
+
+      deviceX.set(gamma);
+      deviceY.set(beta);
+    };
+
+    const requestOrientationPermission = async () => {
+      if (
+        typeof DeviceOrientationEvent !== "undefined" &&
+        typeof DeviceOrientationEvent.requestPermission === "function"
+      ) {
+        try {
+          const permission = await DeviceOrientationEvent.requestPermission();
+
+          if (permission === "granted") {
+            window.addEventListener(
+              "deviceorientation",
+              handleDeviceOrientation,
+            );
+          }
+        } catch {
+          // Permission denied
+        }
+      } else {
+        window.addEventListener("deviceorientation", handleDeviceOrientation);
+      }
+    };
+
+    requestOrientationPermission();
+
+    return () => {
+      window.removeEventListener("deviceorientation", handleDeviceOrientation);
+    };
+  }, [deviceX, deviceY]);
+
+  // Mouse position → percentage
   const xPercent = useTransform(mouseX, (v) => {
     if (windowSize.width === 0) return 0;
+
     const centerX = windowSize.width / 2;
 
     return (v - centerX) / centerX;
@@ -50,17 +99,48 @@ const HeaderParallax = () => {
 
   const yPercent = useTransform(mouseY, (v) => {
     if (windowSize.height === 0) return 0;
+
     const centerY = windowSize.height / 2;
 
     return (v - centerY) / centerY;
   });
 
-  const smoothX = useSpring(xPercent, { stiffness: 50, damping: 15 });
-  const smoothY = useSpring(yPercent, { stiffness: 50, damping: 15 });
+  // Device orientation → percentage
+  const deviceXPercent = useTransform(deviceX, (v) => v / 45);
+
+  const deviceYPercent = useTransform(deviceY, (v) => v / 45);
+
+  // Smooth Mouse
+  const smoothX = useSpring(xPercent, {
+    stiffness: 50,
+    damping: 15,
+  });
+
+  const smoothY = useSpring(yPercent, {
+    stiffness: 50,
+    damping: 15,
+  });
+
+  // Smooth Device
+  const smoothDeviceX = useSpring(deviceXPercent, {
+    stiffness: 50,
+    damping: 15,
+  });
+
+  const smoothDeviceY = useSpring(deviceYPercent, {
+    stiffness: 50,
+    damping: 15,
+  });
 
   const useParallax = (factor) => ({
-    x: useTransform(smoothX, (v) => v * factor),
-    y: useTransform(smoothY, (v) => v * factor),
+    x: useTransform(
+      windowSize.isLargeScreen ? smoothX : smoothDeviceX,
+      (v) => v * factor,
+    ),
+    y: useTransform(
+      windowSize.isLargeScreen ? smoothY : smoothDeviceY,
+      (v) => v * factor,
+    ),
   });
 
   const mainParallax = useParallax(2);
