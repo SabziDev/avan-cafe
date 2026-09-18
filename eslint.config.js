@@ -71,11 +71,9 @@ const customRules = {
 const config = defineConfig(
   {
     tailwind: { entryPoint: "./src/input.css" },
-
     plugins: {
       custom: customRules,
     },
-
     rules: baseRules,
   },
 
