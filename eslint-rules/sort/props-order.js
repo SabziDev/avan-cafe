@@ -12,6 +12,7 @@ const propsOrder = [
   "name",
   "value",
   "placeholder",
+  
   "min",
   "max",
   "minLength",
