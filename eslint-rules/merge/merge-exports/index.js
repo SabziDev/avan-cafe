@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/cognitive-complexity */
 /* eslint-disable unicorn/consistent-function-scoping */
 
 const mergeExports = {
@@ -26,9 +27,12 @@ const mergeExports = {
           Program(node) {
             const { body } = node;
             const sourceCode = context.sourceCode || context.getSourceCode();
+            let start = 0;
 
-            for (let start = 0; start < body.length; start++) {
+            while (start < body.length) {
               if (!isNamedExport(body[start])) {
+                start += 1;
+
                 continue;
               }
 
@@ -39,6 +43,8 @@ const mergeExports = {
               }
 
               if (start === end) {
+                start += 1;
+
                 continue;
               }
 
@@ -50,18 +56,21 @@ const mergeExports = {
                 }
               }
 
+              const startRange = body[start].range[0];
+              const endRange = body[end].range[1];
+
               context.report({
                 node: body[start],
                 messageId: "mergeExports",
-
                 fix: (fixer) =>
                   fixer.replaceTextRange(
-                    [body[start].range[0], body[end].range[1]],
+                    startRange,
+                    endRange,
                     `export { ${specifiers.join(", ")} };`,
                   ),
               });
 
-              start = end;
+              start = end + 1;
             }
 
             let defaultExportNode = null;

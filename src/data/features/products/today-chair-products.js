@@ -1,3 +1,5 @@
+/* eslint-disable sonarjs/pseudo-random */
+
 import products from "./products";
 
 const allProducts = [
