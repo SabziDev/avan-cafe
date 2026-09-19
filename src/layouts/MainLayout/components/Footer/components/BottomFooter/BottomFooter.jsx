@@ -1,4 +1,4 @@
-import DeveloperSignature from "@/components/DeveloperSignature/DeveloperSignature";
+import DeveloperSignature from "@/layouts/components/DeveloperSignature/DeveloperSignature";
 
 const BottomFooter = () => {
   return (
