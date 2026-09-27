@@ -24,18 +24,18 @@ clean and responsive user interface.
 
 ---
 
+## ⚙️ Technologies
+
+- React
+- Tailwind
+
+---
+
 ## ✨ Features
 
 - Product Slider
 - Custom Tailwind components
 - Fully responsive design
-
----
-
-## ⚙️ Technologies
-
-- React
-- Tailwind
 
 ---
 
