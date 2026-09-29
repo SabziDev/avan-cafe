@@ -9,17 +9,8 @@ clean and responsive user interface.
 
 <div align="center">
   <img src="./docs/images/screenshot.webp" alt="Avan-Cafe screenshot" height="450" width="100%"/>
-</div>
 
-<div align="center">
-  <span>
-    🔗 GitHub: 
-    <a href="https://github.com/SabziDev/avan-cafe">LINK</a>
-  </span>
-  <span>
-    🔗 Demo: 
-    <a href="https://sabzidev-avancafe.vercel.app">LINK</a>
-  </span>
+[GITHUB](https://github.com/SabziDev/avan-cafe) | [DEMO](https://sabzidev-avancafe.vercel.app)
 </div>
 
 ---
