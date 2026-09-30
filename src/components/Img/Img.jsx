@@ -54,10 +54,10 @@ const Img = ({
         src={src}
         alt={alt}
         onLoad={() => setIsImageLoaded(true)}
-        className={clsx([
+        className={clsx(
           "size-full object-fill transition-[background,opacity] duration-250",
           isImageLoaded ? "opacity-100" : "opacity-0",
-        ])}
+        )}
         {...(loading && { loading })}
         {...restProps}
       />

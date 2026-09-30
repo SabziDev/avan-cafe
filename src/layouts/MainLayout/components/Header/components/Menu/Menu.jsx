@@ -19,9 +19,9 @@ const Menu = ({ isMobileMenuOpen, toggleMobileMenu }) => {
 
       {/* Sidebar on Mobile-size */}
       <Overlay
-        isShow={isMobileMenuOpen}
+        isOpen={isMobileMenuOpen}
+        hideAt="lg"
         onClose={toggleMobileMenu}
-        className="lg:hidden"
       />
       <div
         className={clsx([

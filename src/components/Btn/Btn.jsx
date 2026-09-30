@@ -6,23 +6,23 @@ const Btn = ({ children, svgId = "", isBtnActive = false, className = "" }) => {
   return (
     <button
       type="button"
-      className={clsx([
+      className={clsx(
         "group flex-center h-9.5 min-w-32 gap-2 rounded-full p-1 pl-2 transition-colors duration-300",
         isBtnActive
           ? "bg-caramel hover:bg-[#A17052]"
           : "bg-cream/80 hover:bg-caramel",
         className,
-      ])}
+      )}
     >
       <span className="flex-center size-full rounded-full bg-white p-0.5 text-sm font-bold text-caramel transition-colors duration-300">
         {children}
       </span>
       <Icon
         id={svgId}
-        className={clsx([
+        className={clsx(
           "size-9 transition-colors duration-300",
           isBtnActive ? "text-white" : "text-[#A2928B] group-hover:text-white",
-        ])}
+        )}
       />
     </button>
   );
