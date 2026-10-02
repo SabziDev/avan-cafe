@@ -79,15 +79,6 @@ const config = defineConfig(
   {
     rules: pluginsRules,
   },
-
-  {
-    files: ["src/routes.{jsx,tsx}"],
-    rules: {
-      "react-refresh/only-export-components": "off",
-
-      "custom/sort-object-props": "off",
-    },
-  },
 );
 
 export default config;

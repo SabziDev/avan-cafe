@@ -1,3 +1,5 @@
+/* eslint-disable custom/sort-object-props */
+
 import { createBrowserRouter, Navigate } from "react-router";
 
 import pagesSeo from "./data/pagesSeo/pagesSeo";
