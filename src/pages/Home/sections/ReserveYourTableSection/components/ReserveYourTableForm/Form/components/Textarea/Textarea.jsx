@@ -1,7 +1,9 @@
 const Textarea = ({ inputField }) => {
   return (
     <textarea
+      name={inputField.name}
       placeholder={inputField.placeholder}
+      autoComplete={inputField.name}
       className="h-40 w-full resize-none rounded-xl bg-cream px-4 py-1 placeholder:text-sm placeholder:text-primary/40 sm:col-span-2"
     />
   );
