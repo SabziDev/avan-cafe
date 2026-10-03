@@ -12,7 +12,7 @@ const Header = () => {
   const [isMobileMenuOpen, toggleMobileMenu] = useToggle(false);
 
   return (
-    <header className="mt-4">
+    <header>
       <div className="container">
         <nav className="relative z-100 flex-items-center justify-between rounded-t-2xl bg-primary px-6 py-3">
           <div className="flex-center gap-5 xl:gap-10">

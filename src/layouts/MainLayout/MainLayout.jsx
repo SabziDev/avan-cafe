@@ -8,9 +8,11 @@ const MainLayout = () => {
     <>
       <LayoutBase />
 
-      <Header />
-      <Main />
-      <Footer />
+      <div className="mt-4">
+        <Header />
+        <Main />
+        <Footer />
+      </div>
     </>
   );
 };
