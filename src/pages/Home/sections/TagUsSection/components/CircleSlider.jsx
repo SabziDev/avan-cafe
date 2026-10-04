@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import Icon from "@/components/Icon/Icon";
 
-import UserStory from "../UserStory";
+import UserStory from "./UserStory/UserStory";
 
 const CircleSlider = ({ users }) => {
   const id = useId();

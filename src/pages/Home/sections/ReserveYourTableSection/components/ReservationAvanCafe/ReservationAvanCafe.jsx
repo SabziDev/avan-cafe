@@ -5,6 +5,7 @@ const ReservationAvanCafe = () => {
         src="/images/pictures/pages/home/reserve-your-table-section/reservation-avan-cafe.webp"
         alt="map"
         loading="lazy"
+        className="h-full w-65"
       />
       <div className="flex-justify-center flex-col items-start gap-2 divide-y divide-primary/20 *:py-2">
         <div className="w-full">

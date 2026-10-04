@@ -2,7 +2,7 @@ import Btn from "@/components/Btn/Btn";
 import users from "@/data/features/users/users";
 
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
-import CircleSlider from "./components/CircleSlider/CircleSlider";
+import CircleSlider from "./components/CircleSlider";
 
 const TagUsSection = () => {
   return (

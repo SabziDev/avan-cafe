@@ -7,6 +7,7 @@ const Map = () => {
         src="/images/pictures/pages/home/reserve-your-table-section/map.webp"
         alt="map"
         loading="lazy"
+        className="h-full w-65"
       />
       <Btn svgId="arrow-medium" className="mt-6 w-full">
         شروع مسیر به آوان
