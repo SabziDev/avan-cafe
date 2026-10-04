@@ -18,7 +18,7 @@ const UserStory = ({ user }) => {
         <Img
           src={user.userImg}
           loading="lazy"
-          className="size-fit rounded-full bg-caramel p-1"
+          className="size-12 rounded-full bg-caramel p-1 md:size-16 lg:size-18"
         />
       </div>
       <span className="text-xs text-white/80">{user.username}</span>

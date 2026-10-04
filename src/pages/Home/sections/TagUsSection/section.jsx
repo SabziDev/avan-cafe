@@ -26,7 +26,7 @@ const TagUsSection = () => {
       </div>
 
       <div
-        className="relative flex-items-center h-100 flex-col justify-start gap-4 rounded-4xl bg-caramel p-2 pr-6"
+        className="relative mx-auto flex-items-center h-100 max-w-300 flex-col justify-start gap-4 rounded-4xl bg-caramel p-2 pr-6"
         style={{
           backgroundImage:
             "radial-gradient(circle at center, #02314b80 1px, transparent 2px)",
