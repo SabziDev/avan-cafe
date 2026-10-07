@@ -1,6 +1,6 @@
 # 🎯 Landing Page - Avan Cafe
 
-A beautiful web landing-page built with React, JavaScript and Tailwind with a
+A beautiful web landing-page built with React, JavaScript and Tailwind, featuring a
 clean and responsive user interface.
 
 ---
