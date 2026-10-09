@@ -8,7 +8,7 @@ clean and responsive user interface.
 ## 👀 Preview
 
 <div align="center">
-  <img src="./docs/images/screenshot.webp" alt="Avan-Cafe screenshot" height="450" width="100%"/>
+  <img src="./docs/images/screenshot.webp" alt="Avan-Cafe screenshot" height="450" width="100%" />
 
 [GITHUB](https://github.com/SabziDev/avan-cafe) | [DEMO](https://sabzidev-avancafe.vercel.app)
 </div>
