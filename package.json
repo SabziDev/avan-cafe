@@ -24,7 +24,7 @@
   "devDependencies": {
     "@fullstacksjs/eslint-config": "^14.5.0",
     "@rolldown/plugin-babel": "^0.2.3",
-    "@sabzidev/eslint-rules": "^1.0.5",
+    "@sabzidev/eslint-rules": "^1.0.9",
     "@tailwindcss/node": "^4.3.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",

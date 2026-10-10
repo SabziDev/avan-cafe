@@ -1,4 +1,4 @@
-/* eslint-disable @sabzidev/sort-object-props */
+/* eslint-disable @sabzidev/sort-props */
 
 import { createBrowserRouter, Navigate } from "react-router";
 
