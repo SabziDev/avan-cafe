@@ -4,8 +4,8 @@ import { createBrowserRouter, Navigate } from "react-router";
 
 import pagesSeo from "./data/pagesSeo/pagesSeo";
 import MainLayout from "./layouts/MainLayout/MainLayout";
-import Home from "./pages/Home/page";
-import NotFound from "./pages/NotFound/page";
+import HomePage from "./pages/Home/page";
+import NotFoundPage from "./pages/NotFound/page";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <HomePage />,
         handle: {
           seo: pagesSeo.home,
         },
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
 
   {
     path: "*",
-    element: <NotFound />,
+    element: <NotFoundPage />,
     handle: {
       seo: pagesSeo.notFound,
     },

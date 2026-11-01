@@ -12,7 +12,7 @@ import TagUsSection from "./sections/TagUsSection/section";
 import TodayDiscountSection from "./sections/TodayDiscountSection/section";
 import WhyAvanSection from "./sections/WhyAvanSection/section";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <Head />
@@ -32,4 +32,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
