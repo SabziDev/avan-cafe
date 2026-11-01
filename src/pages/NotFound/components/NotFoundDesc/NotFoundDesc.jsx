@@ -1,9 +1,9 @@
-import pagesSeo from "@/data/pagesSeo/pagesSeo";
+import metadata from "@/data/metadata/metadata";
 
 const NotFoundDesc = () => {
   return (
     <p className="mb-8 max-w-md text-lg text-gray-300">
-      {pagesSeo.notFound.desc}
+      {metadata.notFound.desc}
     </p>
   );
 };

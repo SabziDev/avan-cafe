@@ -1,4 +1,4 @@
-const pagesSeo = {
+const metadata = {
   home: {
     title: "کافه آوان",
     desc: "آوان به زبان ایتالیایی یعنی سبز؛ یعنی جایی که قهوه با آرامش طبیعت گره میخورد، چون باور داریم یه کافه خوب باید ریشه در آرامش داشته باشد.",
@@ -10,4 +10,4 @@ const pagesSeo = {
   },
 };
 
-export default pagesSeo;
+export default metadata;
