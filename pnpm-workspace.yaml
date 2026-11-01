@@ -1,5 +1,5 @@
 allowBuilds:
-  esbuild: true
-  unrs-resolver: true
+  esbuild: false
+  unrs-resolver: false
 minimumReleaseAgeExclude:
   - '@sabzidev/eslint-rules@1.0.0 || 1.0.5 || 1.0.9 || 1.1.0 || 1.2.0 || 1.2.2'
