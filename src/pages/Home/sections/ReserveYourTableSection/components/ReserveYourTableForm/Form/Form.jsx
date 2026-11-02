@@ -1,4 +1,4 @@
-import NumInput from "@/components/NumInput/NumInput";
+import NumberInput from "@/components/NumberInput/NumberInput";
 import reserveYourTableSectionFormFields from "@/data/features/form-fields/pages/home/reserve-your-table-section";
 
 import Input from "./components/Input/Input";
@@ -17,7 +17,7 @@ const renderInputField = (inputField) => {
 
     case "number": {
       return (
-        <NumInput
+        <NumberInput
           key={inputField.id}
           name={inputField.name}
           placeholder={inputField.name}
