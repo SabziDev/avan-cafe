@@ -6,7 +6,7 @@
 @param {NumberInput} props
 */
 const NumberInput = ({ ...props }) => (
-  <input type="number" onWheel={(e) => e.target.blur()} {...props} />
+  <input type="number" onWheel={(e) => e.currentTarget.blur()} {...props} />
 );
 
 export default NumberInput;
