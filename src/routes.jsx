@@ -20,10 +20,6 @@ const router = createBrowserRouter([
           seo: metadata.home,
         },
       },
-      {
-        path: "home",
-        element: <Navigate to="/" replace />,
-      },
     ],
   },
 
